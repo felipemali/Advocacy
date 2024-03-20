@@ -17,7 +17,8 @@
       @include mixins.font-family('Roboto Thin');
    }
    h4{
-      color: variables.$secondary-dark
+      color: variables.$secondary-dark;
+      @include mixins.font-properties(1rem)
    }
    p{
     text-align: left;

@@ -1,6 +1,29 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
 .comments{
     @media screen and (min-width: 1360px) and (max-width: 1920px){
        display: flex;
        justify-content:center;
+       flex-direction: column;
+      }
+
+      .container-card{
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            display: flex;
+            justify-content:center;
+        }
+      }
+
+      h4{
+        width: 70%;
+        margin: 2rem auto 0 auto;
+        text-align: center;
+        @include mixins.font-properties(2.1rem);
+        @include mixins.font-family('Roboto Bold Italic');
+
+       
       }
 }
