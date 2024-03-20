@@ -1,0 +1,222 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
+@font-face {
+    font-family: "Roboto Bold Italic";
+    src: url(../../fonts/Roboto-BoldItalic.ttf)  
+}
+@font-face {
+    font-family: "Roboto Thin";
+    src: url(../../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto Boldd";
+    src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+.header {
+    position: relative;
+
+    .header-bc {
+        height: 70vh;
+        background-image: url(../../assets/img/bc-header2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 12rem;   
+        
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            background-image: url(../../assets/img/bc-large.webp);
+           
+        }
+    }
+    .overlay {
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Cor preta com 50% de opacidade */
+    }
+    .index-header {
+        width: 100%;
+        padding: 1rem 1rem 1rem 2rem;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        display: none;
+
+        //media
+        @media screen and (max-width: 1360px){
+            display: flex;
+        }
+
+        .logo-container{
+            display: flex;
+            align-items: center;
+        }
+        .logo{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+        p {        
+            @include mixins.font-properties(2rem);
+            color: variables.$white;
+            @include mixins.font-family('Courier New');
+            z-index: 1;  
+            padding-right: 1rem;
+            
+            
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+                @include mixins.font-properties(4rem);
+            }
+
+        }
+    }
+    .header-icon-menu {
+        background-color: variables.$white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        border-radius: 2px;
+
+        img {
+            margin: 0;
+            width: 20px;
+        }
+    }
+    
+
+    .index-subtitle {
+        font-family: sans-serif;
+        margin-top: 2rem;
+        padding: 0 0 0 2rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+
+       //Media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            width: 70%;
+            margin: 4rem auto 0 auto;
+            
+            
+        }
+
+        p {
+            @include mixins.font-family('Roboto Bold Italic');
+            position: relative;
+            @include mixins.font-properties(1.9rem);
+            margin-top: 0.4rem;
+            color: variables.$white;
+            z-index: 1;   
+
+            //media
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            
+              @include mixins.font-properties(2.3rem);
+            }
+        }  
+        span{
+            @include mixins.font-properties(1.2rem);    
+             
+           //media
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+                @include mixins.font-properties(1.4rem);
+               
+            }
+        }
+       
+    }
+    .subtitle2 {        
+        @include mixins.font-properties(0.3rem);
+        margin-top: 4rem !important;  
+        @include mixins.font-family('Roboto Bold Italic');
+        position: relative;
+        color: variables.$white;
+        z-index: 1;   
+    }
+    .card {
+        position: absolute !important;
+        top: 90% !important;
+        left: 50% !important;
+        padding-bottom: 10rem !important;
+        width: 330px !important;
+        height: 250px !important;
+        background-color: variables.$white !important;
+        border-radius: 5px 5px !important;
+        @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
+        z-index: 1 !important;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            width: 500px !important;
+        }
+
+        .card-title,
+        .card-subtitle,
+        .card-subtitle2 {
+          text-align: center;
+          @include mixins.font-family('Roboto Bold');
+          color: variables.$blue-800;
+        }
+
+        .card-title {         
+            @include mixins.font-properties(1.6rem);
+            padding-top: 1rem;
+
+            //media
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+                @include mixins.font-properties(2rem);
+            }
+        }
+        .card-subtitle .card-subtitle2{
+            @include mixins.font-properties(1.2rem);
+
+            
+        }
+        .card-subtitle {
+            padding-top: 0.8rem;  
+            
+            //media
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+                @include mixins.font-properties(1.2rem);
+               
+            }
+        }
+       
+        button {
+            @include mixins.font-family('Roboto Thin');
+            margin: 1rem auto 0 auto;
+            font-style: inherit;
+            @include mixins.font-properties(1.1rem, 500);
+            display: flex;
+            align-items: center;
+            background-color: variables.$dark;
+            color: variables.$white;
+            border: none;
+            padding: 1rem;
+            border-radius: 5px;
+
+            img {
+                width: 32px;
+                background-color: variables.$white;
+                border-radius: 3px;
+                margin-left: 1rem;
+            }
+        }
+    }
+   
+      
+}

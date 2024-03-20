@@ -1,0 +1,180 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
+
+
+
+.index-content{
+    margin-top: 16rem;
+
+     //media
+     @media screen and (min-width: 1360px) and (max-width: 1920px){
+        margin-top: 20rem;
+     }
+    
+
+    .index-container-about{
+        display: flex;
+        flex-direction: column;
+       
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+           // border: 1px solid red;
+            height: 450px;
+           
+           
+        }
+    }
+    .index-main-container-img{
+        position: relative;
+        left: 1%;
+        // height: 300px;
+        height: 200px;
+        display: flex;
+        margin: auto;
+        width: 200px;
+        opacity: 1;
+        transform: translateY(200px);
+        transition: opacity 1s, transform 1s;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            margin: 0;
+        }
+    }
+    .index-main-gray-bc{
+        position: relative;
+        background-color: #4b4a4a;
+        border-top-left-radius: 5px;
+        width: 220px;
+        height: 300px;
+        margin-top: 25px;
+        top: -90%;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            height: 490px;
+            top: -130%;
+            left: 30%;
+           
+           
+        }
+
+    }
+    .index-main-img{
+        
+        .img-person {
+            position: absolute !important;
+            z-index: 1 !important;
+            left: -30% !important;
+            top: -65% !important;
+            // transform: translate(-50%, -50%) !important;
+            width: 326px !important;
+            height: 250px !important;
+            border-radius: 5px !important;
+            box-shadow: 0 0 40px #000 !important;
+
+            
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            width: 454px !important;
+            height: 380px !important;
+            top: -130% !important;
+            //border: 1px solid red;
+            
+        }
+          }
+    }
+    .index-main-orange-bc{
+        position: relative;
+        background-color: #bbb9b9;
+        border-top-right-radius: 5px;
+        width: 130px;
+        height: 280px;
+        margin-top: 35px;
+        margin-left: -50px;
+        top: -90%;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            height: 470px;
+            width: 200px;
+            top: -130%;
+            left: 45%;
+           
+        }
+       
+    }
+
+    .index-about{
+        margin: 13rem 0 0 0;
+        padding-left: 2rem;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            margin: 2rem 0 0 0;
+            padding-left: 4rem;
+            //border: 1px solid blue;
+            width: 500px;
+           
+        
+        }
+
+        h3{
+            font-size: 1.8rem;
+            font-family: sans-serif;
+            margin: 0;
+
+            //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @include mixins.font-properties(2.7rem);
+            @include mixins.font-family('Roboto Bold Italic')
+        }
+            
+        }
+
+        .border-title-about{
+            border: 1px solid orange;
+            margin: 0.3rem 0 0.9rem 0;
+            padding: 0.05rem;
+            background-color: orange;
+            width: 50%;
+        }
+        p{
+            font-size: 1.15rem;
+            max-width: 310px;
+            text-align: justify;
+            letter-spacing: -0.01rem;
+            font-family: "Roboto Boldd", sans-serif;
+            color: variables.$secondary-dark;
+            line-height: variables.$line-heigth;
+
+            //media
+            @media screen and (min-width: 1360px) and (max-width: 1920px){
+                max-width: 500px;
+                text-align: left;
+                @include mixins.font-properties(1.4rem);
+            }
+            
+        }
+        button{
+            @include mixins.font-family('Roboto Regular');
+            width: 150px;
+            padding: 0.7rem;
+            margin: 1.5rem 0 0 0;
+            font-style: inherit;
+            font-weight: 500;
+            background-color: #061631;
+            color: #fff;
+            border: none;
+            display: block;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+    }
+}

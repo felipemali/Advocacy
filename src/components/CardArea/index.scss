@@ -1,0 +1,40 @@
+@use '../../styles/variables';
+
+.area{
+    background-color: variables.$light;
+    padding-left: 2rem;
+    width: 80%;
+    height: 120px;
+    margin: 1rem auto 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 1s ease;
+
+      //media
+      @media screen and (min-width: 1360px) and (max-width: 1920px){
+        width: 25%;
+        height: 80px;
+        margin: 1rem;
+        padding: 1rem;
+        
+      }
+
+   
+
+    .index-occupation-area-icon{
+        img{
+            width: 32px;
+            border-radius: 50px;
+           
+        }
+    }
+    p{
+        font-size: 1.6rem;
+        font-family: sans-serif;
+        padding: 0 0 0 1rem;
+        margin: 0;
+    }
+}

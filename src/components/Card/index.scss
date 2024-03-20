@@ -1,0 +1,38 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
+ 
+.card-generic{
+   @include mixins.card();
+   @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
+
+    //media
+    @media screen and (min-width: 1360px) and (max-width: 1920px){
+      width: 400px;
+    }
+
+   p,h4{
+      @include mixins.font-family('Roboto Thin');
+   }
+   h4{
+      color: variables.$secondary-dark
+   }
+   p{
+    text-align: left;
+    @include mixins.font-properties(1.1rem);
+    line-height: variables.$line-heigth;
+    
+   }
+   h3,h4{
+      text-align: center;
+      margin-top: 1rem;
+   }
+   
+   img{
+    text-align: left;
+   }
+  
+}
+ 

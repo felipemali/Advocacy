@@ -1,0 +1,95 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
+
+.index-occupation-area{
+    background-color: #000;
+    margin-top: 4rem;
+
+     //media
+     @media screen and (min-width: 1360px) and (max-width: 1920px){
+        text-align: center;
+     }
+
+     .index-occupation-area-title, h5{
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            padding: 2rem 0 0 0 ;
+        }
+     }
+
+    .index-occupation-area-title{
+        @include mixins.font-family('Roboto Thin');
+        margin: 0;
+        color: variables.$white;
+        font-size: 1.8rem;
+        padding: 1rem 0 0 2rem;
+
+       
+    
+    }
+   h5{
+    @include mixins.font-family('Roboto Thin');
+        font-size: 1.2rem;
+        color: variables.$white;
+        padding: 0.5rem 0 0 2rem;
+       
+    }
+    .border-title-about{
+        border: 1px solid orange;
+        margin: 0.3rem 0 1.5rem 2rem;
+        padding: 0.05rem;
+        background-color: orange;
+        width: 50%;
+
+        //media
+        @media screen and (min-width: 1360px) and (max-width: 1920px){
+            margin: 0.3rem auto 2rem auto;
+            width: 40%;
+        }
+    }
+    .index-occupation-areas{
+        padding-bottom: 6rem;
+        width: 95%;
+        margin: auto;
+
+          //media
+     @media screen and (min-width: 1360px) and (max-width: 1920px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 1100px;  
+     }
+    }
+    .index-button-container{
+        margin: auto;
+    }
+    .index-button-areas{
+        @include mixins.font-family('Roboto Regular');
+        width: 180px;
+        padding: 1rem 0;
+        margin: 1rem auto 0 4.4rem;
+        font-style: inherit;
+        font-size: 0.9rem;
+        font-weight: 500;
+        background-color:  variables.$white;
+        border-radius: 5px;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none !important;
+
+
+  //media
+     @media screen and (min-width: 1360px) and (max-width: 1920px){
+        padding: 0.7rem;
+        margin: 1rem 0;
+        
+     }
+        img{
+            width: 32px;
+        }
+    }
+}

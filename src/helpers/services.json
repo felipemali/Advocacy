@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "name": "Agronegócio",
+            "img": "./icon-gear.ico",
+            "alt": "icon gear",
+            "id": 0
+        },
+        {
+            "name": "Empresarial",
+            "img": "../../assets/icons/icon-business.ico",
+            "alt": "icon business",
+            "id": 1
+        },
+        {
+            "name": "Público",
+            "img": "../../assets/icons/icon-public.ico",
+            "alt": "icon public",
+            "id": 2
+        },
+        {
+            "name": "Previdenciário",
+            "img": "../../assets/icons/icon-pension.png",
+            "alt": "icon pension",
+            "id": 3
+        },
+        {
+            "name": "Eleitoral",
+            "img": "./icon-gear.ico",
+            "alt": "icon electoral",
+            "id": 4
+        },
+        {
+            "name": "Administrativo",
+            "img": "./icon-gear.ico",
+            "alt": "icon adiministrative",
+            "id": 5
+        },
+        {
+            "name": "Criminal",
+            "img": "./icon-gear.ico",
+            "alt": "icon criminal",
+            "id": 6
+        },
+        {
+            "name": "Imobiliário ",
+            "img": "./icon-gear.ico",
+            "alt": "icon real estate",
+            "id": 7
+        },
+        {
+            "name": "Cível ",
+            "img": "./icon-gear.ico",
+            "alt": "iconCível",
+            "id": 7
+        }
+    ]
+}
