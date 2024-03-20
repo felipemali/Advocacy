@@ -21,10 +21,8 @@ nav{
   
   .navbar {
     width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    padding: 0.7rem;
-    
-    
+    box-shadow: 0 3px 5px rgb(146 161 176 / 15%);
+    padding: 0.7rem 0 2rem 0;
   }
   
   .nav-container {
@@ -36,10 +34,13 @@ nav{
   
   .navbar .menu-items {
     display: flex;
+ 
   }
   
   .navbar .nav-container li {
     list-style: none;
+    
+   
   }
   
   .navbar .nav-container a {
@@ -48,9 +49,7 @@ nav{
     font-size: 1.2rem;
     padding: 0.7rem;
     color: variables.$white;
-    @include mixins.font-properties(1.5rem);
-   
-    
+    @include mixins.font-properties(1.5rem); 
   }
   
   .navbar .nav-container a:hover{

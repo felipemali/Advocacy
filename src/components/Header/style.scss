@@ -89,14 +89,16 @@
         padding: 0 0 0 2rem;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         padding: 20px;
-
+        
        //Media
         @media screen and (min-width: 1360px){
             width: 70%;
             margin: 4rem auto 0 auto;
-            
-            
         }
+        @media screen and (min-width: 1800px) { 
+            padding-left: 15rem;
+            
+          }
 
         p {
             @include mixins.font-family('Roboto Bold Italic');
@@ -108,9 +110,14 @@
 
             //media
             @media screen and (min-width: 1360px) {
-            
               @include mixins.font-properties(2.3rem);
             }
+            @media screen and (min-width: 1800px) {
+                @include mixins.font-properties(3.3rem);
+                
+                
+              }
+            
         }  
         span{
             @include mixins.font-properties(1.2rem);    
