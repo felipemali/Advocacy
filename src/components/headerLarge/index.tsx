@@ -1,5 +1,6 @@
 import "./index.scss";
 import logo from "../../assets/img/logo1.jpeg";
+import { items } from "../../helpers/itemsMenu";
 const HeaderLarge = () => {
   return (
     <nav>
@@ -15,21 +16,11 @@ const HeaderLarge = () => {
             <img className="logo1" src={logo} alt="logo" />
           </div>
           <div className="menu-items">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">about</a>
-            </li>
-            <li>
-              <a href="#">blogs</a>
-            </li>
-            <li>
-              <a href="#">portfolio</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
+            {items.map(({ name }, index) => (
+              <li key={`items-${index}`}>
+                <a href="#">{name}</a>
+              </li>
+            ))}
           </div>
         </div>
       </div>

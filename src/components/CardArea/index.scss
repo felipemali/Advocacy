@@ -1,5 +1,10 @@
 @use '../../styles/variables';
 
+a{
+  display: flex;
+  color: inherit;
+}
+
 .area{
     background-color: variables.$light;
     padding-left: 2rem;
@@ -27,8 +32,7 @@
     .index-occupation-area-icon{
         img{
             width: 32px;
-            border-radius: 50px;
-           
+            border-radius: 50px;  
         }
     }
     p{

@@ -3,4 +3,5 @@ export type CardService = {
   img?: string;
   alt: string;
   id?: number;
+  link?: string;
 };

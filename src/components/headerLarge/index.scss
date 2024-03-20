@@ -9,29 +9,29 @@ nav{
     @media screen and (min-width:  1360px) and (max-width: 1920px){
         display: block;
         z-index: 1;
-        position: relative;
-         
+        position: relative;      
     }
 }
 .container {
     max-width: 1050px;
     width: 90%;
     margin: auto;
+    
   }
   
   .navbar {
     width: 100%;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     padding: 0.7rem;
+    
+    
   }
   
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 62px;
-   
-   
+    height: 62px; 
   }
   
   .navbar .menu-items {
@@ -48,7 +48,9 @@ nav{
     font-size: 1.2rem;
     padding: 0.7rem;
     color: variables.$white;
-    @include mixins.font-properties(1.5rem)
+    @include mixins.font-properties(1.5rem);
+   
+    
   }
   
   .navbar .nav-container a:hover{
@@ -86,6 +88,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     color: variables.$white;
+    
   }
   
   .nav-container .hamburger-lines .line {
@@ -94,6 +97,8 @@ nav{
     width: 100%;
     border-radius: 10px;
     background: variables.$white;
+   
+    
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -120,7 +125,6 @@ nav{
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    //border: 1px solid red;
     text-align: center;
   }
   
@@ -136,6 +140,7 @@ nav{
     right: 15px;
     font-size: 1.2rem;
     color: #0e2431;
+    
   }
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -154,9 +159,9 @@ nav{
     transform: rotate(-45deg);
   }
   
-  .nav-container input[type="checkbox"]:checked ~ .logo{
-    display: none;
-  }
+  // .nav-container input[type="checkbox"]:checked ~ .logo{
+  //   display: none;
+  // }
   .logo1{
     width: 60px;
     height: 60px;

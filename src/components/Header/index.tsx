@@ -17,13 +17,10 @@ const Header = () => {
         <div className="overlay"></div>
         <HeaderLarge />
         <div className="index-header">
-          {/* <div className="logo-container"> */}
           <img className="logo" src={logo} alt="logo" />
           <p className="header-title">Adv.Lopes</p>
-          {/* </div> */}
-
           <div className="header-icon-menu">
-            <img src={menuIco} alt="" />
+            <img src={menuIco} alt="menu" />
           </div>
         </div>
 
@@ -48,7 +45,7 @@ const Header = () => {
         <a href="https://api.whatsapp.com/send?phone=556733252215">
           <button className="index-button">
             Entrar em contato
-            <img src={arrowIco} alt="" />
+            <img src={arrowIco} alt="seta" />
           </button>
         </a>
       </motion.div>

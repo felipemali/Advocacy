@@ -1,27 +1,20 @@
 import person from "../../assets/img/person.jpeg";
-// import useAnimatedAppearance from "../../hooks/useAnimatedAppearance";
-// import { useScrollingDown } from "../../hooks/useScrollingDown";
-
-// import advocacia from "../../assets/img/advocacia-img.jpg";
 import "./index.scss";
 import { motion } from "framer-motion";
 
 const DescriptionPerson = () => {
-  // const isScrollingDown = useScrollingDown();
-
-  // const { ref, isVisible } = useAnimatedAppearance({ isScrollingDown });
   return (
     <div className="index-content">
       <div className="index-container-about">
         <div className="index-main-container-img">
           <div className="index-main-gray-bc"></div>
-          <div className={`index-main-img`}>
+          <div className={"index-main-img"}>
             <motion.img
               className="img-person"
               src={person}
-              initial={{ opacity: 0, y: "30vw" }}
-              animate={{ opacity: 1, y: "calc(50% - 125px)" }}
-              transition={{ duration: 2 }}
+              // initial={{ opacity: 0, y: "30vw" }}
+              // animate={{ opacity: 1, y: "calc(50% - 125px)" }}
+              // transition={{ duration: 2 }}
             />
           </div>
           <div className="index-main-orange-bc"></div>

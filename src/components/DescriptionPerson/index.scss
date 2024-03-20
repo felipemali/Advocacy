@@ -3,9 +3,6 @@
  @use "../../styles/mixins";
  @import "../../styles/global";
 
-
-
-
 .index-content{
     margin-top: 16rem;
 
@@ -24,7 +21,6 @@
             display: flex;
             flex-direction:row;
             justify-content: space-evenly;
-           // border: 1px solid red;
             height: 450px;
            
            
@@ -61,19 +57,15 @@
             height: 490px;
             top: -130%;
             left: 30%;
-           
-           
         }
 
     }
     .index-main-img{
-        
         .img-person {
             position: absolute !important;
             z-index: 1 !important;
             left: -30% !important;
             top: -65% !important;
-            // transform: translate(-50%, -50%) !important;
             width: 326px !important;
             height: 250px !important;
             border-radius: 5px !important;
@@ -82,10 +74,10 @@
             
         //media
         @media screen and (min-width: 1360px) and (max-width: 1920px){
+            opacity: 1;
             width: 454px !important;
             height: 380px !important;
-            top: -130% !important;
-            //border: 1px solid red;
+            top: -90% !important;
             
         }
           }
@@ -106,7 +98,6 @@
             width: 200px;
             top: -130%;
             left: 45%;
-           
         }
        
     }
@@ -119,7 +110,6 @@
         @media screen and (min-width: 1360px) and (max-width: 1920px){
             margin: 2rem 0 0 0;
             padding-left: 4rem;
-            //border: 1px solid blue;
             width: 500px;
            
         
