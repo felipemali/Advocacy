@@ -7,7 +7,7 @@
     margin-top: 16rem;
 
      //media
-     @media screen and (min-width: 1360px) and (max-width: 1920px){
+     @media screen and (min-width: 1360px){
         margin-top: 20rem;
      }
     
@@ -17,7 +17,7 @@
         flex-direction: column;
        
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             display: flex;
             flex-direction:row;
             justify-content: space-evenly;
@@ -39,7 +39,7 @@
         transition: opacity 1s, transform 1s;
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             margin: 0;
         }
     }
@@ -53,7 +53,7 @@
         top: -90%;
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             height: 490px;
             top: -130%;
             left: 30%;
@@ -73,7 +73,7 @@
 
             
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             opacity: 1;
             width: 454px !important;
             height: 380px !important;
@@ -93,7 +93,7 @@
         top: -90%;
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             height: 470px;
             width: 200px;
             top: -130%;
@@ -107,7 +107,7 @@
         padding-left: 2rem;
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             margin: 2rem 0 0 0;
             padding-left: 4rem;
             width: 500px;
@@ -121,7 +121,7 @@
             margin: 0;
 
             //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             @include mixins.font-properties(2.7rem);
             @include mixins.font-family('Roboto Bold Italic')
         }
@@ -145,7 +145,7 @@
             line-height: variables.$line-heigth;
 
             //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                 max-width: 500px;
                 text-align: left;
                 @include mixins.font-properties(1.4rem);

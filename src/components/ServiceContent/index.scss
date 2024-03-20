@@ -9,12 +9,12 @@
     margin-top: 4rem;
 
      //media
-     @media screen and (min-width: 1360px) and (max-width: 1920px){
+     @media screen and (min-width: 1360px){
         text-align: center;
      }
 
      .index-occupation-area-title, h5{
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             padding: 2rem 0 0 0 ;
         }
      }
@@ -44,7 +44,7 @@
         width: 50%;
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             margin: 0.3rem auto 2rem auto;
             width: 40%;
         }
@@ -55,7 +55,7 @@
         margin: auto;
 
           //media
-     @media screen and (min-width: 1360px) and (max-width: 1920px){
+     @media screen and (min-width: 1360px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -83,7 +83,7 @@
 
 
   //media
-     @media screen and (min-width: 1360px) and (max-width: 1920px){
+     @media screen and (min-width: 1360px){
         padding: 0.7rem;
         margin: 1rem 0;
         

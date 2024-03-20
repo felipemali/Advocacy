@@ -9,7 +9,7 @@
    @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
     //media
-    @media screen and (min-width: 1360px) and (max-width: 1920px){
+    @media screen and (min-width: 1360px){
       width: 400px;
     }
 

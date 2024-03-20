@@ -15,7 +15,7 @@
         background-repeat: no-repeat;
         padding-bottom: 12rem;   
         
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             background-image: url(../../assets/img/bc-large.webp);
            
         }
@@ -60,7 +60,7 @@
             padding-right: 1rem;
             
             
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                 @include mixins.font-properties(4rem);
             }
 
@@ -91,7 +91,7 @@
         padding: 20px;
 
        //Media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             width: 70%;
             margin: 4rem auto 0 auto;
             
@@ -107,7 +107,7 @@
             z-index: 1;   
 
             //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px) {
             
               @include mixins.font-properties(2.3rem);
             }
@@ -116,7 +116,7 @@
             @include mixins.font-properties(1.2rem);    
              
            //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                 @include mixins.font-properties(1.4rem);
                
             }
@@ -145,7 +145,7 @@
        
 
         //media
-        @media screen and (min-width: 1360px) and (max-width: 1920px){
+        @media screen and (min-width: 1360px){
             width: 500px !important;
             height: 250px !important;
         }
@@ -163,7 +163,7 @@
             padding-top: 1rem;
 
             //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                 @include mixins.font-properties(2rem);
                 padding-top: 0;
             }
@@ -177,7 +177,7 @@
             padding-top: 0.8rem;  
             
             //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                 @include mixins.font-properties(1.2rem);
                
             }
@@ -197,7 +197,7 @@
             border-radius: 5px;
 
             //media
-            @media screen and (min-width: 1360px) and (max-width: 1920px){
+            @media screen and (min-width: 1360px){
                margin: 0.4rem auto;
                
             }
