@@ -13,8 +13,6 @@ import criminal from "../../assets/icons/criminal.jpg";
 import realEstate from "../../assets/icons/real-estate.jpg";
 
 const ServiceContent = () => {
-  console.log(dataServices.data);
-
   return (
     <div className="index-occupation-area">
       <h3 className="index-occupation-area-title">Área de Atuação</h3>
