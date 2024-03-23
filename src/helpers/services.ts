@@ -1,9 +1,9 @@
 import gear from "../assets/icons/icon-gear.ico";
-import business from "../assets/icons/icon-business.ico";
+// import business from "../assets/icons/icon-business.ico";
 import pension from "../assets/icons/icon-pension.png";
-import publics from "../assets/icons/icon-public.ico";
+// import publics from "../assets/icons/icon-public.ico";
 import electoral from "../assets/icons/electoral.jpg";
-import administrative from "../assets/icons/administrative.jpg";
+// import administrative from "../assets/icons/administrative.jpg";
 import criminal from "../assets/icons/criminal.jpg";
 import realEstate from "../assets/icons/real-estate.jpg";
 import civel from "../assets/icons/civel.png";
@@ -16,20 +16,20 @@ export const dataServices = [
     id: 0,
     link: "https://api.whatsapp.com/send?phone=556733252215",
   },
-  {
-    name: "Empresarial",
-    img: business,
-    alt: "icon business",
-    id: 1,
-    link: "https://api.whatsapp.com/send?phone=556733252215",
-  },
-  {
-    name: "Público",
-    img: publics,
-    alt: "icon public",
-    id: 2,
-    link: "https://api.whatsapp.com/send?phone=556733252215",
-  },
+  // {
+  //   name: "Empresarial",
+  //   img: business,
+  //   alt: "icon business",
+  //   id: 1,
+  //   link: "https://api.whatsapp.com/send?phone=556733252215",
+  // },
+  // {
+  //   name: "Público",
+  //   img: publics,
+  //   alt: "icon public",
+  //   id: 2,
+  //   link: "https://api.whatsapp.com/send?phone=556733252215",
+  // },
   {
     name: "Previdenciário",
     img: pension,
@@ -44,13 +44,13 @@ export const dataServices = [
     id: 4,
     link: "https://api.whatsapp.com/send?phone=556733252215",
   },
-  {
-    name: "Administrativo",
-    img: administrative,
-    alt: "icon administrative",
-    id: 5,
-    link: "https://api.whatsapp.com/send?phone=556733252215",
-  },
+  // {
+  //   name: "Administrativo",
+  //   img: administrative,
+  //   alt: "icon administrative",
+  //   id: 5,
+  //   link: "https://api.whatsapp.com/send?phone=556733252215",
+  // },
   {
     name: "Criminal",
     img: criminal,

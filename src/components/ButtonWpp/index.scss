@@ -13,7 +13,7 @@
     align-items: center; 
 
     //media
-    @media screen and (min-width: 1360px){
+    @media screen and (min-width: variables.$breakpoint-xl){
         left: 82%;
     }
 

@@ -1,7 +1,7 @@
 import "./style.scss";
-import menuIco from "../../assets/icons/icon-menu.ico";
+// import menuIco from "../../assets/icons/icon-menu.ico";
 import arrowIco from "../../assets/icons/icon-arrow.svg";
-import logo from "../../assets/img/logo1.jpeg";
+// import logo from "../../assets/img/logo1.jpeg";
 import { motion } from "framer-motion";
 import useAnimatedText from "../../hooks/useAnimatedText";
 import HeaderLarge from "../headerLarge";
@@ -15,22 +15,26 @@ const Header = () => {
     <header className="header">
       <div className="header-bc">
         <div className="overlay"></div>
-        <HeaderLarge />
-        <div className="index-header">
+        <div className="shadow"></div>
+        <div className="content">
+          <HeaderLarge />
+        </div>
+        {/* começa aqui */}
+        {/* termina aqui */}
+        {/* <div className="index-header">
           <img className="logo" src={logo} alt="logo" />
           <p className="header-title">Adv.Lopes</p>
           <div className="header-icon-menu">
             <img src={menuIco} alt="menu" />
           </div>
-        </div>
-
+        </div> */}
         <div className="index-subtitle miraculous-effect">
           <p>Assessoria</p>
           <p>Jurídica</p>
           <p>Especializada</p>
 
           <span className="subtitle2">{animetedText}</span>
-        </div>
+        </div>{" "}
       </div>
       <motion.div
         initial={{ opacity: 0, x: "-100vw" }}

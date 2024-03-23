@@ -25,6 +25,7 @@ $success: #28a745;
 $info: #17a2b8;
 $warning: #ffc107;
 $danger: #dc3545;
+$vibrantPink: #e91e63;
 $light: #f8f9fa;
 $dark: #343a40;
 $darkk: #24262b;
@@ -32,12 +33,14 @@ $darkk: #24262b;
 
 //breakpoints
 $breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
+$breakpoint-sm: 574px;
+$breakpoint-md: 730px;
+$breakpoint-m2: 767px;
 $breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1600px;
+$breakpoint-xl: 1360px;
+$breakpoint-xxl: 1800px;
 $max-width: 1920px;
+$container: 1170px;
 
 //fontSize
 $line-heigth: 1.3

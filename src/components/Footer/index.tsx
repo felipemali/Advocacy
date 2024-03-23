@@ -6,7 +6,7 @@ import "./index.scss";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="teste">
       <div className="container">
         <div className="row">
           <div className="footer-col">

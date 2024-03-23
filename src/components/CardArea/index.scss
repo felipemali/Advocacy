@@ -19,7 +19,7 @@ a{
     transition: opacity 0.5s ease, transform 1s ease;
 
       //media
-      @media screen and (min-width: 1360px){
+      @media screen and (min-width: variables.$breakpoint-xl){
         width: 25%;
         height: 80px;
         margin: 1rem;

@@ -3,5 +3,4 @@ export const items = [
   { name: "Sobre" },
   { name: "Serviços" },
   { name: "Portfólio" },
-  { name: "Contato" },
 ];

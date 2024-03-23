@@ -5,8 +5,8 @@
  @import "../../styles/global";
 
 nav{
-    display: none;
-    @media screen and (min-width:  1360px){
+  
+    @media screen and (min-width:  variables.$breakpoint-xl){
         display: block;
         z-index: 1;
         position: relative;      
@@ -21,9 +21,13 @@ nav{
   
   .navbar {
     width: 100%;
-    box-shadow: 0 3px 5px rgb(146 161 176 / 15%);
     padding: 0.7rem 0 2rem 0;
+    
+    @media screen and (min-width:  variables.$breakpoint-xl){
+      box-shadow: 0 3px 5px variables.$darkk;
+    }
   }
+  
   
   .nav-container {
     display: flex;
@@ -34,6 +38,8 @@ nav{
   
   .navbar .menu-items {
     display: flex;
+    
+   
  
   }
   
@@ -73,6 +79,10 @@ nav{
     z-index: 5;
     opacity: 0;
     cursor: pointer;
+
+    @media screen and (max-width: variables.$breakpoint-xl){
+      left: 90%;
+    }
   }
   
   .nav-container .hamburger-lines {
@@ -88,6 +98,9 @@ nav{
     justify-content: space-between;
     color: variables.$white;
     
+    @media screen and (max-width: variables.$breakpoint-xl){
+      left: 90%;
+    }
   }
   
   .nav-container .hamburger-lines .line {
@@ -96,8 +109,6 @@ nav{
     width: 100%;
     border-radius: 10px;
     background: variables.$white;
-   
-    
   }
   
   .nav-container .hamburger-lines .line1 {
@@ -115,30 +126,94 @@ nav{
   }
   
   .navbar .menu-items {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
     height: 40vh;
     width: 100%;
     transform: translate(-150%);
     display: flex;
-   justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     margin-left: -40px;
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
+      
+    @media screen and (max-width: variables.$breakpoint-xl){
+      position: absolute;
+      width: 170px;
+      left: 53%;
+      height: 33vh;
+      padding-top: 4rem;
+      transform: translate(300%);
+      border-radius: 5px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    @media screen and (min-width:  variables.$breakpoint-xl){
+      flex-direction: row;
+    }
+    @media screen and (min-width: variables.$breakpoint-md) and (max-width: variables.$breakpoint-xl){
+      left: 75%;
+     
+    }
   }
   
   .navbar .menu-items li {
-    margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
+    
+    @media screen and (min-width:  variables.$breakpoint-xl){
+      flex-direction: row;
+      margin-right: 3rem;
+      height: 60px;
+      
+    }
+
+    @media screen and (max-width:  variables.$breakpoint-xl){
+      border-top: 0.5px solid variables.$gray-dark;
+      background-color: variables.$darkk;
+      width: 80%;
+      margin-left: 2rem;
+    }  
+  }
+  .navbar .menu-items li:last-child{
+    @media screen and (max-width:  variables.$breakpoint-xl){
+      border-bottom: 1px solid variables.$gray-dark;
+    }
+    
+  }
+  .navbar .menu-items li a{
+    display: block;
+    text-align: center;
+    @media screen and (max-width:  variables.$breakpoint-xl){
+      @include mixins.font-properties(1.2rem);
+      @include mixins.font-family('Roboto Boldd') ;
+      z-index: 10;
+     
+    }
+   
+  }
+  .navbar .menu-items li:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .navbar .menu-items li:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   
   .logo {
     position: absolute;
     top: 5px;
+    left: 0;
     right: 15px;
     font-size: 1.2rem;
     color: #0e2431;
+
+    @media screen and (min-width:  variables.$breakpoint-xl){
+      left: 100%;
+    }
     
   }
   

@@ -4,14 +4,14 @@
  @import "../../styles/global";
 
 .comments{
-    @media screen and (min-width: 1360px){
+    @media screen and (min-width: variables.$breakpoint-xl){
        display: flex;
        justify-content:center;
        flex-direction: column;
       }
 
       .container-card{
-        @media screen and (min-width: 1360px){
+        @media screen and (min-width: variables.$breakpoint-xl){
             display: flex;
             justify-content:center;
         }

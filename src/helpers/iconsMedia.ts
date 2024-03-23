@@ -16,11 +16,11 @@ export const iconsMedia = [
   {
     name: "facebook",
     icon: face,
-    link: "#",
+    link: "https://www.facebook.com/reginaldo.lopez.1?locale=pt_BR",
   },
   {
     name: "instagram",
     icon: insta,
-    link: "#",
+    link: "https://www.instagram.com/regislopez.souza/",
   },
 ];

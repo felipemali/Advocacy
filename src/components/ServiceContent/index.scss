@@ -7,14 +7,12 @@
 .index-occupation-area{
     background-color: variables.$darkk;
     margin-top: 4rem;
-
-     //media
-     @media screen and (min-width: 1360px){
-        text-align: center;
-     }
+    text-align: center;
+    
 
      .index-occupation-area-title, h5{
-        @media screen and (min-width: 1360px){
+        
+        @media screen and (min-width: variables.$breakpoint-xl){
             padding: 2rem 0 0 0 ;
         }
      }
@@ -24,8 +22,11 @@
         margin: 0;
         color: variables.$white;
         font-size: 1.8rem;
-        padding: 1rem 0 0 2rem;
+        padding-top: 1rem;
 
+        @media screen and (min-width: variables.$breakpoint-xl){
+            padding: 1rem 0 0 2rem;
+        }
        
     
     }
@@ -33,18 +34,22 @@
     @include mixins.font-family('Roboto Thin');
         font-size: 1.2rem;
         color: variables.$white;
-        padding: 0.5rem 0 0 2rem;
+        padding: 0.5rem 0 0 1rem;
+
+        @media screen and (min-width: variables.$breakpoint-xl){
+            padding: 0.5rem 0 0 2rem;
+        }
        
     }
     .border-title-about{
         border: 1px solid orange;
-        margin: 0.3rem 0 1.5rem 2rem;
+        margin: 0.3rem auto 1.5rem auto;
         padding: 0.05rem;
         background-color: orange;
         width: 50%;
 
         //media
-        @media screen and (min-width: 1360px){
+        @media screen and (min-width: variables.$breakpoint-xl){
             margin: 0.3rem auto 2rem auto;
             width: 40%;
         }
@@ -55,7 +60,7 @@
         margin: auto;
 
           //media
-     @media screen and (min-width: 1360px){
+     @media screen and (min-width: variables.$breakpoint-xl){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -83,7 +88,7 @@
 
 
   //media
-     @media screen and (min-width: 1360px){
+     @media screen and (min-width: variables.$breakpoint-xl){
         padding: 0.7rem;
         margin: 1rem 0;
         
