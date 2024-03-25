@@ -5,7 +5,7 @@
 
  
 .card-generic{
-   @include mixins.card();
+   @include mixins.card(70%);
    @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
 
     //media

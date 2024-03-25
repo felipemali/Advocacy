@@ -1,0 +1,66 @@
+@use '../../styles/variables';
+ @use '../../styles/fonts';
+ @use "../../styles/mixins";
+ @import "../../styles/global";
+
+.content-article{
+ @include mixins.container(17rem, auto, 2rem, auto, 90%);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+ @media screen and (min-width: variables.$breakpoint-xl){
+    // border: 1px solid red;
+    width: 70%;
+  }
+
+ .container-img{
+    img{
+        width: 330px;
+        display: block;
+        margin: auto;
+        
+
+        @media screen and (min-width: variables.$breakpoint-xl){
+            width: 526px;
+          }
+    }
+ }
+ .container-title{
+    margin-top: 3rem;
+    h1{
+        text-align: center;
+        @include mixins.font-properties(1.5rem);
+        @include mixins.font-family('Roboto Bold');
+        opacity: 0.65;
+        
+        @media screen and (min-width: variables.$breakpoint-xl){
+          
+            
+        }
+       
+    }
+ }
+ .content{
+    overflow-wrap: break-word;
+    margin-top: 3rem;
+    padding-left: 0.6rem;
+
+    @media screen and (min-width: variables.$breakpoint-xl){
+        margin: 3rem auto 0 auto;
+        padding-left: 3.5rem;
+        // border: 1px solid blue;
+        width: 80%;
+    }
+    p{
+        @include mixins.font-properties(1.05rem);
+        line-height: 1.6;
+        margin-top: 1rem;
+        color: variables.$secondary-dark;
+
+        @media screen and (min-width: variables.$breakpoint-xl){
+            @include mixins.font-properties(1.2rem);
+        }
+    }
+ }
+}

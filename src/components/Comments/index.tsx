@@ -5,8 +5,11 @@ const Comments = () => {
   return (
     <div className="comments">
       <div className="title-container">
-        <h4>O que os clientes falam...</h4>
+        <h3>Opiniões dos Clientes...</h3>
+
+        <div className="border-title-about"></div>
       </div>
+
       <div className="container-card">
         {comments.data.map(({ user, text, career }, index) => (
           <Card key={`card-${index}`} user={user} text={text} career={career} />

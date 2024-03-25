@@ -1,9 +1,10 @@
 @use 'variables';
 
-@mixin container{
+@mixin container($t, $r, $b, $l, $w){
+    width: $w;
     max-width: variables.$max-width;
     padding: 1.5rem 0;
-    margin: 0 auto;
+    margin: $t $r $b $l;
 }
 @mixin font-properties($size, $weight: normal) {
   font-size: $size;
@@ -22,16 +23,29 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  @mixin card {
+  @mixin card($width) {
     background-color: variables.$white;
-    width: 70%;
+    width: $width;
     min-height: 250px;
-    margin: 3rem auto;
+    margin: 2rem auto;
     border-radius: 5px;
     padding: 1rem 1.2rem;
-
+    
     @media screen and (min-width: variables.$breakpoint-xl){
       margin: 3rem 0 3rem 3rem;
       height: 400px;
+    }
+  }
+  @mixin article($width) {
+    background-color: variables.$white;
+    width: $width;
+    min-height: 250px;
+    margin: 2rem auto;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    
+    @media screen and (min-width: variables.$breakpoint-xl){
+      margin: 3rem 0 3rem 3rem;
+    
     }
   }

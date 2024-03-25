@@ -1,6 +1,7 @@
 import "./index.scss";
 import logo from "../../assets/img/logo1.jpeg";
 import { items } from "../../helpers/itemsMenu";
+import { Link } from "react-router-dom";
 const HeaderLarge = () => {
   return (
     <nav>
@@ -12,11 +13,11 @@ const HeaderLarge = () => {
             <img className="logo1" src={logo} alt="logo" />
           </div>
           <div className="menu-items">
-            {items.map(({ name }, index) => (
+            {items.map(({ name, link }, index) => (
               <li key={`items-${index + 1}`}>
-                <a href="#teste" onClick={() => console.log(name)}>
+                <Link to={link} onClick={() => console.log(name)}>
                   {name}
-                </a>
+                </Link>
               </li>
             ))}
           </div>

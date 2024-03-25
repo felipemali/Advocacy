@@ -4,6 +4,8 @@
  @import "../../styles/global";
 
 .comments{
+  margin-top: 4rem;
+
     @media screen and (min-width: variables.$breakpoint-xl){
        display: flex;
        justify-content:center;
@@ -17,13 +19,26 @@
         }
       }
 
-      h4{
-        width: 70%;
-        margin: 2rem auto 0 auto;
-        text-align: center;
-        @include mixins.font-properties(2.1rem);
-        @include mixins.font-family('Roboto Bold Italic');
-
-       
+      .title-container{
+        width: 90%;
+        margin: auto;
+        padding: 0.5rem 0;
+        background-color: variables.$gray-100;
+        h3{
+          width: 80%;
+          text-align: center;
+          font-size: 1.8rem;
+          @include mixins.font-properties(1.8rem, 700);
+          @include mixins.font-family('sans-serif');
+          margin: 0 auto 0 auto;
+        }
+        .border-title-about{
+          border: 1px solid orange;
+          margin: 0.3rem auto 0.9rem auto;
+          padding: 0.05rem;
+          background-color: orange;
+          width: 50%;
       }
+      }
+      
 }

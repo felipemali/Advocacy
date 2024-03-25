@@ -1,11 +1,11 @@
-import Home from "./pages/Home";
+import { useRoutes } from "react-router-dom";
+
+import { routes } from "./routes";
 
 function App() {
-  return (
-    <>
-      <Home />
-    </>
-  );
+  const elements = useRoutes(routes);
+
+  return <>{elements}</>;
 }
 
 export default App;

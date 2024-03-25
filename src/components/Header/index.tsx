@@ -1,8 +1,9 @@
 import "./style.scss";
 // import menuIco from "../../assets/icons/icon-menu.ico";
 import arrowIco from "../../assets/icons/icon-arrow.svg";
-// import logo from "../../assets/img/logo1.jpeg";
 import { motion } from "framer-motion";
+// import logo from "../../assets/img/logo1.jpeg";
+
 import useAnimatedText from "../../hooks/useAnimatedText";
 import HeaderLarge from "../headerLarge";
 
@@ -19,8 +20,6 @@ const Header = () => {
         <div className="content">
           <HeaderLarge />
         </div>
-        {/* começa aqui */}
-        {/* termina aqui */}
         {/* <div className="index-header">
           <img className="logo" src={logo} alt="logo" />
           <p className="header-title">Adv.Lopes</p>
