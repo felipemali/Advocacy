@@ -6,7 +6,6 @@ import ArticlePanel from "../../components/ArticlePanel";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 // import CardHeader from "../../components/Header/CardHeader";
-
 const Home = () => {
   return (
     <>
