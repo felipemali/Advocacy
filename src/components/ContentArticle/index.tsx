@@ -19,9 +19,15 @@ const ContentArticle = () => {
       <div className="container-title">
         <h1>{article.title}</h1>
       </div>
-      <div className="content">
-        {article.content.map(({ text }, index) => (
-          <p key={`text-iptu-${index}`}>{text}</p>
+      <div className="container-content">
+        {article.content.map(({ text, subtitle }, index) => (
+          <div className="content" key={`text-iptu-${index}`}>
+            <p>
+              <span>{subtitle}</span>
+              {""}
+              {text}
+            </p>
+          </div>
         ))}
       </div>
     </div>

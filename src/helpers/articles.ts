@@ -7,20 +7,26 @@ export const articles = [
     date: "23/03/2024",
     content: [
       {
-        text: "Idosos: Pessoas com idade igual ou superior a 60 anos podem solicitar a isenção do IPTU se atenderem aos requisitos estabelecidos pela legislação municipal. Geralmente, isso inclui possuir apenas um imóvel residencial e ter renda familiar limitada. ",
+        subtitle: "Idosos:",
+        text: "Pessoas com idade igual ou superior a 60 anos podem solicitar a isenção do IPTU se atenderem aos requisitos estabelecidos pela legislação municipal. Geralmente, isso inclui possuir apenas um imóvel residencial e ter renda familiar limitada. ",
       },
       {
-        text: "Pessoas com Deficiência: Indivíduos com deficiência física, mental, auditiva, visual ou múltipla, devidamente comprovada, também têm direito à isenção do IPTU. Os critérios específicos podem variar e devem ser verificados na legislação local.",
+        subtitle: "Pessoas com Deficiência:",
+        text: "Indivíduos com deficiência física, mental, auditiva, visual ou múltipla, devidamente comprovada, também têm direito à isenção do IPTU. Os critérios específicos podem variar e devem ser verificados na legislação local.",
       },
 
       {
-        text: "Aposentados e Pensionistas: Em alguns casos, aposentados e pensionistas podem ser elegíveis para a isenção do IPTU, desde que atendam aos requisitos de idade e renda estabelecidos pela legislação municipal.",
+        subtitle: "Aposentados e Pensionistas:",
+        text: "Em alguns casos, aposentados e pensionistas podem ser elegíveis para a isenção do IPTU, desde que atendam aos requisitos de idade e renda estabelecidos pela legislação municipal.",
       },
       {
-        text: "Beneficiários de Programas Sociais: Em determinadas situações, beneficiários de programas sociais do governo podem ter direito à isenção do IPTU, desde que comprovem sua condição",
+        subtitle: "Beneficiários de Programas Sociais:",
+        text: "Em determinadas situações, beneficiários de programas sociais do governo podem ter direito à isenção do IPTU, desde que comprovem sua condição",
       },
       {
-        text: "Imóvel Adquirido com Benefícios do Programa Minha Casa Minha Vida, não importa o Valor Comercial e sim o Valor Venal.",
+        subtitle:
+          "Imóvel Adquirido com Benefícios do Programa Minha Casa Minha Vida",
+        text: "não importa o Valor Comercial e sim o Valor Venal.",
       },
     ],
     img: IPTU,

@@ -33,11 +33,16 @@
           margin: 0 auto 0 auto;
         }
         .border-title-about{
+         
           border: 1px solid orange;
           margin: 0.3rem auto 0.9rem auto;
           padding: 0.05rem;
           background-color: orange;
           width: 50%;
+
+          @media screen and (min-width: variables.$breakpoint-xl){
+            width: 27%;
+          }
       }
       }
       
