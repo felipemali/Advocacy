@@ -6,7 +6,7 @@ export const iconsMedia = [
   {
     name: "gmail",
     icon: gmail,
-    link: "#",
+    link: "mailto:regisjuridico@hotmail.com",
   },
   {
     name: "whatsapp",

@@ -14,7 +14,7 @@ const ContentArticle = () => {
   return (
     <div className="content-article" ref={contentRef}>
       <div className="container-img">
-        <img src={article.imgLarge} alt="" />
+        <img src={article.imgLarge} alt="imagem IPTU" />
       </div>
       <div className="container-title">
         <h1>{article.title}</h1>

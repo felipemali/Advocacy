@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const ArticleComponent = ({ title, date, img }: Article) => {
   return (
     <article className="article-iptu-container">
-      <Link to="/articles">
+      <Link to="/artigos">
         <div className="iptu">
           <div className="container-iptu-img">
             <img src={img} alt="" />
@@ -17,7 +17,7 @@ const ArticleComponent = ({ title, date, img }: Article) => {
             <h5>Artigos</h5>
             <p>{title}</p>
             <span>
-              <img width={20} src={calendar} alt="" />
+              <img width={20} src={calendar} alt="calendar" />
               {date}
             </span>
 

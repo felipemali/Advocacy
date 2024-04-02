@@ -10,7 +10,7 @@ export const routes: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "/articles",
+    path: "/artigos",
     element: <Articles />,
   },
 ];
