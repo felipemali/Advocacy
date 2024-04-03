@@ -28,9 +28,9 @@ const Header = () => {
           </div>
         </div> */}
         <div className="index-subtitle miraculous-effect">
-          <p>Assessoria</p>
-          <p>Jurídica</p>
-          <p>Especializada</p>
+          <p>Soluções</p>
+          <p>Jurídicas </p>
+          <p>Sob Medida</p>
 
           <span className="subtitle2">{animetedText}</span>
         </div>{" "}
