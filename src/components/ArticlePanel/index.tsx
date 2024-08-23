@@ -10,6 +10,7 @@ const ArticlePanel = () => {
           title={data.title}
           date={data.date}
           img={data.imgLarge}
+          id={data.id}
         />
       ))}
     </section>

@@ -4,14 +4,21 @@ import calendar from "../../assets/img/articlesImg/calendar.png";
 import arrow from "../../assets/img/articlesImg/arrow.png";
 import { Article } from "../../models/ArticleProps";
 import { Link } from "react-router-dom";
+import { ArticleContext } from "../../context/ArticlesContext";
+import { useContext } from "react";
 
-const ArticleComponent = ({ title, date, img }: Article) => {
+const ArticleComponent = ({ title, date, img, id }: Article) => {
+  const { setArticleID } = useContext(ArticleContext);
+  const saveId = () => {
+    setArticleID(id);
+    sessionStorage.setItem("articleId", JSON.stringify(id));
+  };
   return (
     <article className="article-iptu-container">
-      <Link to="/artigos">
+      <Link to="/artigos" onClick={saveId}>
         <div className="iptu">
           <div className="container-iptu-img">
-            <img src={img} alt="" />
+            <img src={img} alt="logo para o artigo IPTU" />
           </div>
           <div className="iptu-content">
             <h5>Artigos</h5>

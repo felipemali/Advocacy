@@ -30,6 +30,7 @@
     img{
         width: 160px;
         height: 160px;
+        border-radius: 5px;
 
         @media screen and (min-width: variables.$breakpoint-xl){
             width: 300px;
@@ -39,7 +40,8 @@
     }
 }
 .iptu-content{
-    padding-left: 0.6rem;
+    padding-left: 0.9rem;
+    //tava 0.6rem
     width: 100%;
 
 

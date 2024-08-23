@@ -41,10 +41,10 @@
        
     }
     .border-title-about{
-        border: 1px solid orange;
+        border: 1px solid variables.$orange;
         margin: 0.3rem auto 1.5rem auto;
         padding: 0.05rem;
-        background-color: orange;
+        background-color: variables.$orange;
         width: 50%;
 
         //media

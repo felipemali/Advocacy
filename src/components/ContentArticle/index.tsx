@@ -1,9 +1,15 @@
 import "./index.scss";
 import { articles } from "../../helpers/articles";
-import { useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
+import { ArticleContext } from "../../context/ArticlesContext";
 const ContentArticle = () => {
+  const { articleID } = useContext(ArticleContext);
+
   const contentRef = useRef<HTMLDivElement>(null);
-  const article = articles[0];
+  const sessionArticleId = sessionStorage.getItem("articleId");
+  const verificationID = sessionArticleId ? Number(sessionArticleId) : articleID
+  const article =
+    articles[verificationID];
 
   useEffect(() => {
     if (contentRef.current) {
@@ -24,11 +30,11 @@ const ContentArticle = () => {
           <div className="content" key={`text-iptu-${index}`}>
             <p>
               <span>{subtitle}</span>
-              {""}
               {text}
             </p>
           </div>
         ))}
+        <span className="warning">{articles[verificationID].warning}</span>
       </div>
     </div>
   );

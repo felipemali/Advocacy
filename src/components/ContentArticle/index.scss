@@ -4,7 +4,7 @@
  @import "../../styles/global";
 
 .content-article{
- @include mixins.container(17rem, auto, 2rem, auto, 90%);
+ @include mixins.container(13rem, auto, 2rem, auto, 90%);
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -19,6 +19,7 @@
         width: 330px;
         display: block;
         margin: auto;
+        border-radius: 5px;
         
 
         @media screen and (min-width: variables.$breakpoint-xl){
@@ -28,12 +29,13 @@
  }
  .container-title{
     margin-top: 3rem;
+    
+    
     h1{
         text-align: center;
         @include mixins.font-properties(1.5rem);
         @include mixins.font-family('Roboto Bold');
         opacity: 0.65;
-        
         @media screen and (min-width: variables.$breakpoint-xl){
           
             
@@ -45,6 +47,7 @@
     overflow-wrap: break-word;
     margin-top: 3rem;
     padding-left: 0.6rem;
+   
 
     @media screen and (min-width: variables.$breakpoint-xl){
         margin: 3rem auto 0 auto;
@@ -76,6 +79,18 @@
                 @include mixins.font-properties(1.2rem, 900);
             }
         }
+       
+    }
+    .warning{
+        background-color: yellow;
+        margin-right: 0.5rem;
+            display: inline-block;
+            margin-top: 1rem;
+            color: variables.$darkk;
+            @include mixins.font-properties(1.1rem, 900);
+            @media screen and (min-width: variables.$breakpoint-xl){
+                @include mixins.font-properties(1.2rem, 900);
+            }
     }
  }
 }

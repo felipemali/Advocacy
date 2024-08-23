@@ -8,4 +8,5 @@ export type Article = {
   content?: textProps[];
   img: string;
   imgLarge?: string;
+  id: number;
 };

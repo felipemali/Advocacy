@@ -1,5 +1,7 @@
 import IPTU from "../assets/img/articlesImg/article-iptu.png";
 import IPTULarge from "../assets/img/articlesImg/article-iptu-large.jpg";
+import heranca from "../assets/img/articlesImg/cobranca-herdeiro-aluguel.jpg";
+// import heranca2 from "../assets/img/articlesImg/desgin.png";
 
 export const articles = [
   {
@@ -31,5 +33,39 @@ export const articles = [
     ],
     img: IPTU,
     imgLarge: IPTULarge,
+    warning: "",
+    id: 0,
+  },
+  {
+    title:
+      "Posso cobrar aluguel de herdeiro que mora no imóvel recebido de herança?",
+    date: "23/08/2024",
+    content: [
+      {
+        subtitle: "A resposta é:",
+        text: "SIM. O herdeiro que mora sozinho no imóvel de herança deve pagar aluguel aos herdeiros que não estão utilizando o imóvel.  ",
+      },
+      {
+        subtitle: "Objetivo:",
+        text: "O objetivo do aluguel é gerar renda para conseguirem abrir o inventário ou para realizar o pagamento de despesas, impostos, dívidas do falecido, etc.          ",
+      },
+
+      {
+        subtitle: "Melhor Caminho:",
+        text: "Nesses casos, os herdeiros que não estão de acordo devem manifestar expressamente, o melhor caminho é através de uma notificação extrajudicial. ",
+      },
+      {
+        subtitle: "Atenção:",
+        text: "É importante que a notificação seja feita da forma correta para que não haja problemas posteriormente caso seja necessário ingressar com uma ação judicial.",
+      },
+    ],
+    img: heranca,
+    imgLarge: heranca,
+    warning:
+      "Quer saber mais a respeito do assunto, clique no ícone do WHATSAPP que está na tela!",
+    id: 1,
   },
 ];
+
+// const sessionData = getSessionData("idProperties");
+//sessionStorage.setItem("articleId", JSON.stringify(articleID));
