@@ -31,7 +31,7 @@ export const articles = [
     imgLarge: heranca,
     warning:
       "Quer saber mais a respeito do assunto, clique no ícone do WHATSAPP que está na tela!",
-    id: 1,
+    id: 0,
   },
   {
     title: "Quem Pode Requerer a Isenção do IPTU em Campo Grande?",
@@ -63,7 +63,7 @@ export const articles = [
     img: IPTU,
     imgLarge: IPTULarge,
     warning: "",
-    id: 0,
+    id: 1,
   },
 ];
 
