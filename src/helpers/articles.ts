@@ -5,6 +5,35 @@ import heranca from "../assets/img/articlesImg/cobranca-herdeiro-aluguel.jpg";
 
 export const articles = [
   {
+    title:
+      "Posso cobrar aluguel de herdeiro que mora no imóvel recebido de herança?",
+    date: "23/08/2024",
+    content: [
+      {
+        subtitle: "A resposta é:",
+        text: "SIM. O herdeiro que mora sozinho no imóvel de herança deve pagar aluguel aos herdeiros que não estão utilizando o imóvel.  ",
+      },
+      {
+        subtitle: "Objetivo:",
+        text: "O objetivo do aluguel é gerar renda para conseguirem abrir o inventário ou para realizar o pagamento de despesas, impostos, dívidas do falecido, etc.          ",
+      },
+
+      {
+        subtitle: "Melhor Caminho:",
+        text: "Nesses casos, os herdeiros que não estão de acordo devem manifestar expressamente, o melhor caminho é através de uma notificação extrajudicial. ",
+      },
+      {
+        subtitle: "Atenção:",
+        text: "É importante que a notificação seja feita da forma correta para que não haja problemas posteriormente caso seja necessário ingressar com uma ação judicial.",
+      },
+    ],
+    img: heranca,
+    imgLarge: heranca,
+    warning:
+      "Quer saber mais a respeito do assunto, clique no ícone do WHATSAPP que está na tela!",
+    id: 1,
+  },
+  {
     title: "Quem Pode Requerer a Isenção do IPTU em Campo Grande?",
     date: "23/03/2024",
     content: [
@@ -35,35 +64,6 @@ export const articles = [
     imgLarge: IPTULarge,
     warning: "",
     id: 0,
-  },
-  {
-    title:
-      "Posso cobrar aluguel de herdeiro que mora no imóvel recebido de herança?",
-    date: "23/08/2024",
-    content: [
-      {
-        subtitle: "A resposta é:",
-        text: "SIM. O herdeiro que mora sozinho no imóvel de herança deve pagar aluguel aos herdeiros que não estão utilizando o imóvel.  ",
-      },
-      {
-        subtitle: "Objetivo:",
-        text: "O objetivo do aluguel é gerar renda para conseguirem abrir o inventário ou para realizar o pagamento de despesas, impostos, dívidas do falecido, etc.          ",
-      },
-
-      {
-        subtitle: "Melhor Caminho:",
-        text: "Nesses casos, os herdeiros que não estão de acordo devem manifestar expressamente, o melhor caminho é através de uma notificação extrajudicial. ",
-      },
-      {
-        subtitle: "Atenção:",
-        text: "É importante que a notificação seja feita da forma correta para que não haja problemas posteriormente caso seja necessário ingressar com uma ação judicial.",
-      },
-    ],
-    img: heranca,
-    imgLarge: heranca,
-    warning:
-      "Quer saber mais a respeito do assunto, clique no ícone do WHATSAPP que está na tela!",
-    id: 1,
   },
 ];
 
