@@ -26,6 +26,23 @@
     
 
 }
+.iptu-new{
+    @include mixins.articlenew(90%);
+    @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (min-width: variables.$breakpoint-xl){
+        @include mixins.articlenew(600px);
+        margin: auto;
+        
+    }
+    
+
+}
+
+
 .container-iptu-img{
     img{
         width: 160px;

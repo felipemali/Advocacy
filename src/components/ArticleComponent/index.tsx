@@ -16,7 +16,7 @@ const ArticleComponent = ({ title, date, img, id }: Article) => {
   return (
     <article className="article-iptu-container">
       <Link to="/artigos" onClick={saveId}>
-        <div className="iptu">
+        <div className={`${date === "23/08/2024" ? "iptu-new" : "iptu"}`}>
           <div className="container-iptu-img">
             <img src={img} alt="logo para o artigo IPTU" />
           </div>
