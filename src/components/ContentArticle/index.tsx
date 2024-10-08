@@ -7,9 +7,10 @@ const ContentArticle = () => {
 
   const contentRef = useRef<HTMLDivElement>(null);
   const sessionArticleId = sessionStorage.getItem("articleId");
-  const verificationID = sessionArticleId ? Number(sessionArticleId) : articleID
-  const article =
-    articles[verificationID];
+  const verificationID = sessionArticleId
+    ? Number(sessionArticleId)
+    : articleID;
+  const article = articles[verificationID];
 
   useEffect(() => {
     if (contentRef.current) {

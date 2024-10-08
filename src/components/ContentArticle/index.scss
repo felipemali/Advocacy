@@ -1,96 +1,90 @@
-@use '../../styles/variables';
- @use '../../styles/fonts';
- @use "../../styles/mixins";
- @import "../../styles/global";
+@use "../../styles/variables";
+@use "../../styles/fonts";
+@use "../../styles/mixins";
+@import "../../styles/global";
 
-.content-article{
- @include mixins.container(13rem, auto, 2rem, auto, 90%);
- display: flex;
- flex-direction: column;
- justify-content: center;
+.content-article {
+  @include mixins.container(13rem, auto, 2rem, auto, 90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
- @media screen and (min-width: variables.$breakpoint-xl){
+  @media screen and (min-width: variables.$breakpoint-xl) {
     // border: 1px solid red;
     width: 70%;
   }
 
- .container-img{
-    img{
-        width: 330px;
-        display: block;
-        margin: auto;
-        border-radius: 5px;
-        
+  .container-img {
+    img {
+      width: 330px;
+      display: block;
+      margin: auto;
+      border-radius: 5px;
 
-        @media screen and (min-width: variables.$breakpoint-xl){
-            width: 526px;
-          }
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        width: 526px;
+      }
     }
- }
- .container-title{
+  }
+  .container-title {
     margin-top: 3rem;
-    
-    
-    h1{
-        text-align: center;
-        @include mixins.font-properties(1.5rem);
-        @include mixins.font-family('Roboto Bold');
-        opacity: 0.65;
-        @media screen and (min-width: variables.$breakpoint-xl){
-          
-            
-        }
-       
+
+    h1 {
+      text-align: center;
+      @include mixins.font-properties(1.5rem);
+      @include mixins.font-family("Roboto Bold");
+      opacity: 0.65;
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        width: 80%;
+      padding-left: 3.5rem;
+      margin: auto
+      }
     }
- }
- .container-content{
+  }
+  .container-content {
     overflow-wrap: break-word;
     margin-top: 3rem;
     padding-left: 0.6rem;
-   
 
-    @media screen and (min-width: variables.$breakpoint-xl){
-        margin: 3rem auto 0 auto;
-        padding-left: 3.5rem;
-        // border: 1px solid blue;
-        width: 80%;
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      margin: 3rem auto 0 auto;
+      padding-left: 3.5rem;
+      width: 80%;
     }
-   
 
-    .content{
-        display: flex;
+    .content {
+      display: flex;
 
-        p{
-            @include mixins.font-properties(1.05rem);
-            line-height: 1.6;
-            margin-top: 1rem;
-            color: variables.$secondary-dark;
-         
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(1.2rem);
-            }
+      p {
+        @include mixins.font-properties(1.05rem);
+        line-height: 1.6;
+        margin-top: 1rem;
+        color: variables.$secondary-dark;
+
+        @media screen and (min-width: variables.$breakpoint-xl) {
+          @include mixins.font-properties(1.2rem);
         }
-        span{
-            margin-right: 0.5rem;
-            display: inline-block;
-            color: variables.$darkk;
-            @include mixins.font-properties(1.1rem, 900);
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(1.2rem, 900);
-            }
-        }
-       
-    }
-    .warning{
-        background-color: yellow;
+      }
+      span {
         margin-right: 0.5rem;
-            display: inline-block;
-            margin-top: 1rem;
-            color: variables.$darkk;
-            @include mixins.font-properties(1.1rem, 900);
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(1.2rem, 900);
-            }
+        display: inline-block;
+        color: variables.$darkk;
+        @include mixins.font-properties(1.1rem, 900);
+        @media screen and (min-width: variables.$breakpoint-xl) {
+          @include mixins.font-properties(1.2rem, 900);
+        }
+      }
     }
- }
+    .warning {
+      background-color: yellow;
+      margin-right: 0.5rem;
+      display: inline-block;
+      margin-top: 1rem;
+      color: variables.$darkk;
+      @include mixins.font-properties(1.1rem, 900);
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(1.2rem, 900);
+      }
+    }
+  }
 }

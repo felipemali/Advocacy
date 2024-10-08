@@ -1,9 +1,50 @@
 import IPTU from "../assets/img/articlesImg/article-iptu.png";
 import IPTULarge from "../assets/img/articlesImg/article-iptu-large.jpg";
 import heranca from "../assets/img/articlesImg/cobranca-herdeiro-aluguel.jpg";
+import woman from "../assets/img/articlesImg/womann.png";
 // import heranca2 from "../assets/img/articlesImg/desgin.png";
 
 export const articles = [
+  {
+    title:
+      "Sou casada com separação total de bens. Meu marido faleceu, tenho direito de permanecer na casa?",
+    date: "08/10/2024",
+    content: [
+      {
+        subtitle: "Resposta é:",
+        text: "Sim, o cônjuge sobrevivente tem direito ao direito real de habitação, que garante o direito de moradia no imóvel familiar. ",
+      },
+      {
+        subtitle: "Direitos:",
+        text: "O direito real de habitação é um direito vitalício e personalíssimo, ou seja, o cônjuge sobrevivente pode permanecer no imóvel até o falecimento. ",
+      },
+
+      {
+        subtitle: "*",
+        text: "O direito real de habitação é assegurado independentemente do regime de bens do casamento ou da união estável.",
+      },
+      {
+        subtitle: "*",
+        text: "O direito real de habitação é garantido mesmo que o cônjuge sobrevivente tenha outros bens em seu patrimônio pessoal.",
+      },
+      {
+        subtitle: "*",
+        text: "O direito real de habitação é gratuito e não é possível exigir do cônjuge sobrevivente qualquer contrapartida financeira em favor dos herdeiros.",
+      },
+      {
+        subtitle: "ATENÇÃO:",
+        text: "No entanto, o direito real de habitação não se aplica em caso de divórcio. A questão deve ser resolvida na partilha de bens do divórcio.",
+      },
+      {
+        subtitle: "Direito à Moradia:",
+        text: "O direito à moradia é o direito de toda pessoa ter acesso a um lar e a uma comunidade seguros para viver em paz, dignidade e saúde.",
+      },
+    ],
+    img: woman,
+    imgLarge: woman,
+    warning: "",
+    id: 0,
+  },
   {
     title:
       "Posso cobrar aluguel de herdeiro que mora no imóvel recebido de herança?",
@@ -31,7 +72,7 @@ export const articles = [
     imgLarge: heranca,
     warning:
       "Quer saber mais a respeito do assunto, clique no ícone do WHATSAPP que está na tela!",
-    id: 0,
+    id: 1,
   },
   {
     title: "Quem Pode Requerer a Isenção do IPTU em Campo Grande?",
@@ -63,7 +104,7 @@ export const articles = [
     img: IPTU,
     imgLarge: IPTULarge,
     warning: "",
-    id: 1,
+    id: 2,
   },
 ];
 
