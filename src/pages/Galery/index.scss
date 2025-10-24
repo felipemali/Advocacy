@@ -1,0 +1,120 @@
+.gallery-container {
+  // background-color: #e9e7e7;
+  background: linear-gradient(135deg, #24262b 0%, #3a3a3a 30%, #5c4f3b 100%);
+}
+.gallery {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+  text-align: center;
+
+  .title {
+    max-width: 550px;
+  }
+  .index-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3;
+    font-size: 1rem;
+    color: #c19d53;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+  }
+
+  .index-title-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2rem;
+    margin: 0;
+    color: #fff;
+    padding-bottom: 0.5rem;
+  }
+
+  .border-title-about {
+    width: 150px;
+    height: 1px;
+    background-color: #fff;
+    // margin: 0.5rem 0 1.5rem 0;
+    margin: 0.2rem auto 3rem auto;
+    border-radius: 2px;
+  }
+  .caption {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-top: 0.8rem;
+    max-width: 280px;
+    line-height: 1.5;
+    span {
+      color: #b38427;
+      font-weight: 500;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    color: #1c1c1c;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #c6a664;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .border-separate {
+    border-bottom: 1px solid goldenrod;
+    border-top-right-radius: 10px;
+    margin: 4rem 0;
+  }
+  .gallery-block {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease-in-out;
+
+    &.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    .images {
+      display: flex;
+      gap: 1.5rem;
+
+      img {
+        width: 300px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.5);
+
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+    }
+  }
+
+  // espaçamento entre blocos
+  .gallery-block + .gallery-block {
+    margin-top: 5rem;
+  }
+}

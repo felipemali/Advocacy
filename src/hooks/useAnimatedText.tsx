@@ -36,7 +36,7 @@ const useMiraculousEffect = (text: string): React.ReactNode => {
             key={index}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            transition={{ delay: index * 0.5, duration: 0.8 }}
+            transition={{ delay: index * 0.3, duration: 0.8 }}
             className="word"
           >
             {word}{" "}

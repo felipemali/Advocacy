@@ -1,7 +1,7 @@
 @use "../../styles/variables";
 @use "../../styles/fonts";
 @use "../../styles/mixins";
-@import "../../styles/global";
+@use "../../styles/global";
 
 .content-article {
   @include mixins.container(13rem, auto, 2rem, auto, 90%);
@@ -36,8 +36,8 @@
       opacity: 0.65;
       @media screen and (min-width: variables.$breakpoint-xl) {
         width: 80%;
-      padding-left: 3.5rem;
-      margin: auto
+        padding-left: 3.5rem;
+        margin: auto;
       }
     }
   }

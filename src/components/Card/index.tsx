@@ -1,16 +1,13 @@
 import { CardProps } from "../../models/Card";
 import "./index.scss";
-import aspas from "../../assets/icons/aspas.png";
+// import aspas from "../../assets/icons/aspas.png";
 
 const Card = ({ user, text, career }: CardProps) => {
   return (
-    <div className="card-generic-container">
-      <div className="card-generic">
-        <img src={aspas} alt="aspas" />
-        <p>{text}</p>
-        <h3>{user}</h3>
-        <h4>{career}</h4>
-      </div>
+    <div className="card">
+      <h4 className="card-user">{user}</h4>
+      <p className="card-career">{career}</p>
+      <p className="card-text">"{text}"</p>
     </div>
   );
 };

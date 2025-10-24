@@ -1,11 +1,13 @@
-import ButtonWpp from "../../components/ButtonWpp";
-import Comments from "../../components/Comments";
+// import ButtonWpp from "../../components/ButtonWpp";
+// import Comments from "../../components/Comments";
 import DescriptionPerson from "../../components/DescriptionPerson";
 import ServiceContent from "../../components/ServiceContent";
 import ArticlePanel from "../../components/ArticlePanel";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ContentTopHome from "../../components/ContentTopHome";
+import { AreaGallery } from "@/components/AreaGallery";
+import Comments from "@/components/Comments";
 // import CardHeader from "../../components/Header/CardHeader";
 const Home = () => {
   return (
@@ -16,9 +18,10 @@ const Home = () => {
 
       <main>
         <DescriptionPerson />
-        <ServiceContent />
+        <AreaGallery />
         <ArticlePanel />
-        <ButtonWpp />
+        <ServiceContent />
+        {/* <ButtonWpp /> */}
         <Comments />
       </main>
       <Footer />

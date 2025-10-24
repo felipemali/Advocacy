@@ -1,39 +1,73 @@
-@use '../../styles/variables';
- @use '../../styles/fonts';
- @use "../../styles/mixins";
- @import "../../styles/global";
+@use "../../styles/variables";
+@use "../../styles/fonts";
+@use "../../styles/mixins";
+@use "../../styles/global";
 
- 
-.card-generic{
-   @include mixins.card(70%);
-   @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
+.container-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+  padding: 0 2rem;
 
-    //media
-    @media screen and (min-width: variables.$breakpoint-xl){
-      width: 400px;
+  @media screen and (min-width: variables.$breakpoint-xl) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    padding: 2rem 1.5rem;
+    text-align: left;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+
+    // Borda lateral dourada
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 5px;
+      background: linear-gradient(to bottom, #c19d53, #d8b86d);
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      transition: all 0.3s ease;
     }
 
-   p,h4{
-      @include mixins.font-family('Roboto Thin');
-   }
-   h4{
-      color: variables.$secondary-dark;
-      @include mixins.font-properties(1rem)
-   }
-   p{
-    text-align: left;
-    @include mixins.font-properties(1.1rem);
-    line-height: variables.$line-heigth;
-    
-   }
-   h3,h4{
-      text-align: center;
-      margin-top: 1rem;
-   }
-   
-   img{
-    text-align: left;
-   }
-  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+
+      &::before {
+        width: 8px;
+        background: linear-gradient(to bottom, #d8b86d, #c19d53);
+      }
+    }
+
+    .card-user {
+      font-weight: 700;
+      font-family: "Playfair Display", serif;
+      color: #0f172a;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-career {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 1rem;
+    }
+
+    .card-text {
+      font-size: 0.95rem;
+      color: #334155;
+      line-height: 1.6;
+      font-style: italic;
+    }
+  }
 }
- 

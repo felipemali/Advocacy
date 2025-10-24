@@ -1,6 +1,5 @@
 import { useRoutes } from "react-router-dom";
 import { ArticleContextProvider } from "./context/ArticlesContext";
-
 import { routes } from "./routes";
 
 function App() {

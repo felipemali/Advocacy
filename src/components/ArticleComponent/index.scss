@@ -1,7 +1,7 @@
 @use "../../styles/variables";
 @use "../../styles/fonts";
 @use "../../styles/mixins";
-@import "../../styles/global";
+@use "../../styles/global";
 
 .article-iptu-container {
   @media screen and (min-width: variables.$breakpoint-md) {

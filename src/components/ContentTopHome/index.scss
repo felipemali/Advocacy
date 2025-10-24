@@ -1,95 +1,90 @@
-@use '../../styles/variables';
- @use '../../styles/fonts';
- @use "../../styles/mixins";
- @import "../../styles/global";
- 
- .content-top-home{
-    position: relative;
-   
-.content-bc {
-   height: 70vh;
+@use "../../styles/variables";
+@use "../../styles/fonts";
+@use "../../styles/mixins";
+@use "../../styles/global";
+
+.content-top-home {
+  position: relative;
+  margin-top: 3rem;
+
+  .content-bc {
+    height: 70vh;
     background-image: url(../../assets/img/bc-header2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 12rem;   
+    padding-bottom: 12rem;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-   
+
     filter: grayscale(60%);
-    
-    @media screen and (min-width: variables.$breakpoint-xl){
-        background-image: url(../../assets/img/bc-large.webp);
+
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      background-image: url(../../assets/img/bc-large.webp);
     }
-}
-.overlay {
-    position: absolute; 
+  }
+  .overlay {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-}
-.index-subtitle {
+  }
+  .index-subtitle-top {
     font-family: sans-serif;
     padding: 4rem 0 0 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    
-    
-   //Media
-    @media screen and (min-width: variables.$breakpoint-xl){
-        width: 70%;
-        margin: 0 auto 0 auto;
+    text-align: start;
+
+    //Media
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      width: 70%;
+      margin: 0 auto 0 auto;
     }
-    @media screen and (min-width: variables.$breakpoint-xxl) { 
-        padding-left: 15rem;
-      }
-     
+    @media screen and (min-width: variables.$breakpoint-xxl) {
+      padding-left: 15rem;
+    }
 
     p {
-        @include mixins.font-family('Roboto Bold Italic');
-        position: relative;
-        @include mixins.font-properties(1.9rem);
-        margin-top: 0.4rem;
-        color: variables.$white;
-        z-index: 1;   
-        //media
-        @media screen and (max-width: variables.$breakpoint-xl){
-            width: 60%;
-        }
-        @media screen and (min-width: variables.$breakpoint-xl) {
-          @include mixins.font-properties(2.3rem);
-        }
-        @media screen and (min-width: variables.$breakpoint-xxl) {
-            @include mixins.font-properties(3.3rem);
-            
-            
-          }
-        
-    }  
-    span{
-        @include mixins.font-properties(1.2rem);    
-         
-       //media
-        @media screen and (min-width: variables.$breakpoint-xl){
-            @include mixins.font-properties(1.4rem);
-           
-        }
+      @include mixins.font-family("Roboto Bold Italic");
+      position: relative;
+      @include mixins.font-properties(1.9rem);
+      margin-top: 0.4rem;
+      color: variables.$white;
+      z-index: 1;
+      //media
+      @media screen and (max-width: variables.$breakpoint-xl) {
+        width: 60%;
+      }
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(2.3rem);
+      }
+      @media screen and (min-width: variables.$breakpoint-xxl) {
+        @include mixins.font-properties(3.3rem);
+      }
     }
-   
-}
+    span {
+      @include mixins.font-properties(1.2rem);
 
-.subtitle2 {        
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(1.4rem);
+      }
+    }
+  }
+
+  .subtitle2 {
     @include mixins.font-properties(0.3rem);
-    margin-top: 4rem !important;  
-    @include mixins.font-family('Roboto Bold Italic');
+    margin-top: 4rem !important;
+    @include mixins.font-family("Roboto Bold Italic");
     position: relative;
     color: variables.$white;
-    z-index: 1;   
-}
-.card {
+    z-index: 1;
+  }
+  .card {
     position: absolute !important;
     top: 80% !important;
     left: 50% !important;
@@ -99,75 +94,92 @@
     border-radius: 5px 5px !important;
     @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
     z-index: 1 !important;
-    
-   
 
     //media
-    @media screen and (min-width: variables.$breakpoint-xl){
-        width: 500px !important;
-        height: 250px !important;
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      width: 500px !important;
+      height: 250px !important;
     }
-   
 
     .card-title,
     .card-subtitle,
     .card-subtitle2 {
       text-align: center;
-      @include mixins.font-family('Roboto Bold');
+      @include mixins.font-family("Roboto Bold");
       color: variables.$blue-800;
     }
 
-    .card-title {         
-        @include mixins.font-properties(1.6rem);
-        padding-top: 1rem;
+    .card-title {
+      @include mixins.font-properties(1.6rem);
+      padding-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        //media
-        @media screen and (min-width: variables.$breakpoint-xl){
-            @include mixins.font-properties(2rem);
-            padding-top: 0;
-        }
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(2rem);
+        padding-top: 0;
+      }
     }
-    .card-subtitle .card-subtitle2{
-        @include mixins.font-properties(1.2rem);
-
-        
+    .card-subtitle .card-subtitle2 {
+      @include mixins.font-properties(1.2rem);
     }
     .card-subtitle {
-        padding-top: 0.8rem;  
-        
-        //media
-        @media screen and (min-width: variables.$breakpoint-xl){
-            @include mixins.font-properties(1.2rem);
-           
-        }
-    }
-   
-    button {
-        @include mixins.font-family('Roboto Thin');
-        margin: 1rem auto 0 auto;
-        font-style: inherit;
-        @include mixins.font-properties(1.1rem, 500);
-        display: flex;
-        align-items: center;
-        background-color: variables.$dark;
-        color: variables.$white;
-        border: none;
-        padding: 1rem;
-        border-radius: 5px;
+      padding-top: 0.8rem;
 
-        //media
-        @media screen and (min-width: variables.$breakpoint-xl){
-           margin: 0.4rem auto;
-           
-        }
-
-        img {
-            width: 32px;
-            background-color: variables.$white;
-            border-radius: 3px;
-            margin-left: 1rem;
-        }
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(1.2rem);
+      }
     }
+
+    .index-button-about {
+      border: none;
+      border-radius: 8px;
+      padding: 0.8rem 1.5rem;
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      align-items: center;
+      span {
+        padding-left: 0.5rem;
+      }
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(#e6e6e6 1px, transparent 1px);
+        background-size: 20px 20px;
+        opacity: 0.2;
+        pointer-events: none;
+      }
+
+      &.primary {
+        background-color: #061631;
+        color: #fff;
+
+        &:hover {
+          background-color: #0b2a60;
+          transform: translateY(-2px);
+        }
+      }
+
+      &.secondary {
+        background-color: transparent;
+        border: 2px solid #061631;
+        color: #061631;
+
+        &:hover {
+          background-color: #061631;
+          color: #fff;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
 }
-
- }

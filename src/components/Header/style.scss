@@ -1,232 +1,213 @@
-@use '../../styles/variables';
- @use '../../styles/fonts';
- @use "../../styles/mixins";
- @import "../../styles/global";
+@use "../../styles/variables";
+@use "../../styles/fonts";
+@use "../../styles/mixins";
+@use "../../styles/global";
 
 //começa aqui
 
 // termina aq
 
-
 .header {
+  position: relative;
+  background-color: variables.$dark;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  @media screen and (min-width: variables.$breakpoint-xl) {
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: -45%;
+      width: 50%;
+      height: 0;
+      box-shadow: 0 0 30rem 100px rgb(255, 255, 255);
+      opacity: 0.6;
+    }
+    .content {
+      position: relative;
+    }
+  }
+
+  .index-header {
+    width: 100%;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+
+    //media
+    @media screen and (max-width: variables.$breakpoint-xl) {
+      display: flex;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 1;
+    }
+    p {
+      @include mixins.font-properties(2rem);
+      color: variables.$white;
+      @include mixins.font-family("Courier New");
+      z-index: 1;
+      padding-right: 1rem;
+
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(4rem);
+      }
+    }
+  }
+  .header-icon-menu {
+    background-color: variables.$white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 2px;
+
+    img {
+      margin: 0;
+      width: 20px;
+    }
+  }
+
+  .index-subtitle {
+    font-family: sans-serif;
+    margin-top: 2rem;
+    padding: 0 0 0 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+    //Media
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      width: 70%;
+      margin: 4rem auto 0 auto;
+    }
+    @media screen and (min-width: variables.$breakpoint-xxl) {
+      padding-left: 15rem;
+    }
+
+    p {
+      @include mixins.font-family("Roboto Bold Italic");
+      position: relative;
+      @include mixins.font-properties(1.9rem);
+      margin-top: 0.4rem;
+      color: variables.$white;
+      z-index: 1;
+      //media
+      @media screen and (max-width: variables.$breakpoint-xl) {
+        width: 60%;
+      }
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(2.3rem);
+      }
+      @media screen and (min-width: variables.$breakpoint-xxl) {
+        @include mixins.font-properties(3.3rem);
+      }
+    }
+    span {
+      @include mixins.font-properties(1.2rem);
+
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(1.4rem);
+      }
+    }
+  }
+  .subtitle2 {
+    @include mixins.font-properties(0.3rem);
+    margin-top: 4rem !important;
+    @include mixins.font-family("Roboto Bold Italic");
     position: relative;
-    background-color: variables.$dark;
+    color: variables.$white;
+    z-index: 1;
+  }
+  .card {
+    position: absolute !important;
+    top: 90% !important;
+    left: 50% !important;
+    width: 330px !important;
+    height: 260px !important;
+    background-color: variables.$white !important;
+    border-radius: 5px 5px !important;
+    @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
+    z-index: 1 !important;
 
-   
-    .overlay {
-        position: absolute; 
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+    //media
+    @media screen and (min-width: variables.$breakpoint-xl) {
+      width: 500px !important;
+      height: 250px !important;
     }
-    @media screen and (min-width: variables.$breakpoint-xl){
-        .shadow{
-            position: absolute;
-            top: 0;
-            left: -45%;
-            width: 50%; 
-            height: 0;
-            box-shadow: 0 0 30rem 100px rgb(255, 255, 255);
-            opacity: 0.6;
-        }
-        .content{
-            position: relative;
-          }
+
+    .card-title,
+    .card-subtitle,
+    .card-subtitle2 {
+      text-align: center;
+      @include mixins.font-family("Roboto Bold");
+      color: variables.$blue-800;
     }
-   
-    .index-header {
-        width: 100%;
-        padding: 1rem 1rem 1rem 2rem;
-        margin: 0;
-        justify-content: space-between;
-        align-items: center;
-        display: none;
 
-        //media
-        @media screen and (max-width: variables.$breakpoint-xl){
-            display: flex;
-        }
+    .card-title {
+      @include mixins.font-properties(1.6rem);
+      padding-top: 1rem;
 
-        .logo-container{
-            display: flex;
-            align-items: center;
-        }
-        .logo{
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            position: relative;
-            z-index: 1;
-        }
-        p {        
-            @include mixins.font-properties(2rem);
-            color: variables.$white;
-            @include mixins.font-family('Courier New');
-            z-index: 1;  
-            padding-right: 1rem;
-            
-            
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(4rem);
-            }
-
-        }
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(2rem);
+        padding-top: 0;
+      }
     }
-    .header-icon-menu {
+    .card-subtitle .card-subtitle2 {
+      @include mixins.font-properties(1.2rem);
+    }
+    .card-subtitle {
+      padding-top: 0.8rem;
+
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        @include mixins.font-properties(1.2rem);
+      }
+    }
+
+    button {
+      @include mixins.font-family("Roboto Thin");
+      margin: 1rem auto 0 auto;
+      font-style: inherit;
+      @include mixins.font-properties(1.1rem, 500);
+      display: flex;
+      align-items: center;
+      background-color: variables.$dark;
+      color: variables.$white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+
+      //media
+      @media screen and (min-width: variables.$breakpoint-xl) {
+        margin: 0.4rem auto;
+      }
+
+      img {
+        width: 32px;
         background-color: variables.$white;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-        border-radius: 2px;
-
-        img {
-            margin: 0;
-            width: 20px;
-        }
+        border-radius: 3px;
+        margin-left: 1rem;
+      }
     }
-    
-
-    .index-subtitle {
-        font-family: sans-serif;
-        margin-top: 2rem;
-        padding: 0 0 0 2rem;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        
-       //Media
-        @media screen and (min-width: variables.$breakpoint-xl){
-            width: 70%;
-            margin: 4rem auto 0 auto;
-        }
-        @media screen and (min-width: variables.$breakpoint-xxl) { 
-            padding-left: 15rem;
-            
-          }
-
-        p {
-            @include mixins.font-family('Roboto Bold Italic');
-            position: relative;
-            @include mixins.font-properties(1.9rem);
-            margin-top: 0.4rem;
-            color: variables.$white;
-            z-index: 1;   
-            //media
-            @media screen and (max-width: variables.$breakpoint-xl){
-                width: 60%;
-            }
-            @media screen and (min-width: variables.$breakpoint-xl) {
-              @include mixins.font-properties(2.3rem);
-            }
-            @media screen and (min-width: variables.$breakpoint-xxl) {
-                @include mixins.font-properties(3.3rem);
-                
-                
-              }
-            
-        }  
-        span{
-            @include mixins.font-properties(1.2rem);    
-             
-           //media
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(1.4rem);
-               
-            }
-        }
-       
-    }
-    .subtitle2 {        
-        @include mixins.font-properties(0.3rem);
-        margin-top: 4rem !important;  
-        @include mixins.font-family('Roboto Bold Italic');
-        position: relative;
-        color: variables.$white;
-        z-index: 1;   
-    }
-    .card {
-        position: absolute !important;
-        top: 90% !important;
-        left: 50% !important;
-        width: 330px !important;
-        height: 260px !important;
-        background-color: variables.$white !important;
-        border-radius: 5px 5px !important;
-        @include mixins.box-shadow(0px, 0px, 10px, rgba(0, 0, 0, 0.5));
-        z-index: 1 !important;
-        
-       
-
-        //media
-        @media screen and (min-width: variables.$breakpoint-xl){
-            width: 500px !important;
-            height: 250px !important;
-        }
-
-        .card-title,
-        .card-subtitle,
-        .card-subtitle2 {
-          text-align: center;
-          @include mixins.font-family('Roboto Bold');
-          color: variables.$blue-800;
-        }
-
-        .card-title {         
-            @include mixins.font-properties(1.6rem);
-            padding-top: 1rem;
-
-            //media
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(2rem);
-                padding-top: 0;
-            }
-        }
-        .card-subtitle .card-subtitle2{
-            @include mixins.font-properties(1.2rem);
-
-            
-        }
-        .card-subtitle {
-            padding-top: 0.8rem;  
-            
-            //media
-            @media screen and (min-width: variables.$breakpoint-xl){
-                @include mixins.font-properties(1.2rem);
-               
-            }
-        }
-       
-        button {
-            @include mixins.font-family('Roboto Thin');
-            margin: 1rem auto 0 auto;
-            font-style: inherit;
-            @include mixins.font-properties(1.1rem, 500);
-            display: flex;
-            align-items: center;
-            background-color: variables.$dark;
-            color: variables.$white;
-            border: none;
-            padding: 1rem;
-            border-radius: 5px;
-
-            //media
-            @media screen and (min-width: variables.$breakpoint-xl){
-               margin: 0.4rem auto;
-               
-            }
-
-            img {
-                width: 32px;
-                background-color: variables.$white;
-                border-radius: 3px;
-                margin-left: 1rem;
-            }
-        }
-    }
-   
-      
+  }
 }

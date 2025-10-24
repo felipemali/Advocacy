@@ -1,0 +1,55 @@
+.container-gallery {
+  background: linear-gradient(135deg, #24262b 0%, #3a3a3a 30%, #5c4f3b 100%);
+  padding-top: 1rem;
+  // padding: 1rem 1rem 2rem 1.3rem;
+
+  margin-bottom: 4rem;
+
+  .sub-container-gallery {
+    width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+
+    @media screen and (min-width: 1536px) {
+      width: 1536px;
+    }
+  }
+  .container-img{
+     width: 100%;
+  height: auto;
+  margin: auto;
+
+  img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+  
+  }
+  .carousel-item{
+    height: 520px;
+
+  }
+  .container-a{
+     width: 90%;
+  max-width: 450px;
+  margin: auto;
+
+  }
+  .caption {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.95rem;
+    color: #fff;
+    max-width: 280px;
+    text-align: center;
+    margin: auto;
+    padding-top: 0.5rem;
+    span {
+      color: #b38427;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+}
