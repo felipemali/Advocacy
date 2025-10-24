@@ -4,6 +4,7 @@ Advocacia RegisLopes é um site para o Advogado Reginal Lopes, desenvolvido com 
 
 <br>
 <br>
+<br>
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -14,10 +15,14 @@ Advocacia RegisLopes é um site para o Advogado Reginal Lopes, desenvolvido com 
 ## 🚀 Funcionalidades
 
 <<<<<<< HEAD
+
 ### Core Features
+
 =======
+
 ### Recursos Principais
->>>>>>> 17beade978874a089af4927bb63a71b2ef453c84
+
+> > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
 
 - ✅ **Página Home**: Acesso a todo conteúdo principal
 - ✅ **Página Article**: Acesso ao artigo especifico selecionado
@@ -45,12 +50,12 @@ src/
 ## 🛠️ Tecnologias
 
 <<<<<<< HEAD
+
 - **React 18.2.0** - Linguagem
-- **Typescript 5.2.2** - Biblioteca base
-=======
+- # **Typescript 5.2.2** - Biblioteca base
 - **Typescript 5.2.2** - Linguagem
 - **React 18.2.0** - Biblioteca base
->>>>>>> 17beade978874a089af4927bb63a71b2ef453c84
+  > > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
 - **Vite** - ferramenta de build
 - **React-router-dom 6.22.3** - Roteamento
 - **Sass 1.71.1** - Estilização
@@ -86,8 +91,7 @@ yarn dev
 ## 🚀 Acessar o site
 
 - Para acessar o site é só clicar em "[Regislopes Advocacia](https://www.regislopes.com/)"
-<<<<<<< HEAD
-=======
+  <<<<<<< HEAD
+  =======
 
-
->>>>>>> 17beade978874a089af4927bb63a71b2ef453c84
+> > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
