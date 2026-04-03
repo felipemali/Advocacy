@@ -2,9 +2,6 @@
 
 Advocacia RegisLopes é um site para o Advogado Reginal Lopes, desenvolvido com Reacts, Vite e Sass para estilização.
 
-<br>
-<br>
-
 ## 🚀 Funcionalidades
 
 <<<<<<< HEAD
