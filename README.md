@@ -42,7 +42,6 @@ src/
 - # **Typescript 5.2.2** - Biblioteca base
 - **Typescript 5.2.2** - Linguagem
 - **React 18.2.0** - Biblioteca base
-  > > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
 - **Vite** - ferramenta de build
 - **React-router-dom 6.22.3** - Roteamento
 - **Sass 1.71.1** - Estilização
@@ -81,4 +80,3 @@ yarn dev
   <<<<<<< HEAD
   =======
 
-> > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
