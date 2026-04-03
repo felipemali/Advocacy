@@ -4,7 +4,6 @@ Advocacia RegisLopes é um site para o Advogado Reginal Lopes, desenvolvido com 
 
 ## 🚀 Funcionalidades
 
-<<<<<<< HEAD
 
 ### Core Features
 
@@ -12,7 +11,6 @@ Advocacia RegisLopes é um site para o Advogado Reginal Lopes, desenvolvido com 
 
 ### Recursos Principais
 
-> > > > > > > 17beade978874a089af4927bb63a71b2ef453c84
 
 - ✅ **Página Home**: Acesso a todo conteúdo principal
 - ✅ **Página Article**: Acesso ao artigo especifico selecionado
@@ -39,7 +37,6 @@ src/
 
 ## 🛠️ Tecnologias
 
-<<<<<<< HEAD
 
 - **React 18.2.0** - Linguagem
 - # **Typescript 5.2.2** - Biblioteca base
