@@ -4,15 +4,14 @@
 @use "../../styles/global";
 
 .container-card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  -ms-flex-align: start;
+  flex-wrap: wrap;
   gap: 1.8rem;
   padding: 0 2rem;
 
-  @media screen and (min-width: variables.$breakpoint-xl) {
-    width: 85%;
-    margin: 0 auto;
-  }
+  align-items: flex-start;
+  align-content: flex-start;
 
   .card {
     position: relative;
