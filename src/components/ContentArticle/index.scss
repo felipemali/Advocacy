@@ -14,6 +14,10 @@
     width: 70%;
   }
 
+  @media screen and (max-width: variables.$breakpoint-md) {
+    @include mixins.container(5rem, auto, 2rem, auto, 90%);
+  }
+
   .container-img {
     img {
       width: 330px;
