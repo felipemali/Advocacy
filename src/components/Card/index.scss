@@ -70,6 +70,10 @@
     }
 
     .card-text {
+      user-select: none; // padrão
+      -webkit-user-select: none; // Safari / Chrome mobile
+      -ms-user-select: none; // IE (legado)
+      -webkit-touch-callout: none; // remove menu de copiar/definir no iOS
       font-size: 0.95rem;
       color: #334155;
       line-height: 1.6;
@@ -109,6 +113,8 @@
   }
 
   .see-more {
+    user-select: none;
+    -webkit-user-select: none;
     display: inline-block;
     margin-top: 0.5rem;
     font-size: 0.85rem;
