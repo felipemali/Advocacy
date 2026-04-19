@@ -1,51 +1,60 @@
 import "./index.scss";
-import useAnimatedText from "../../hooks/useAnimatedText";
 import { motion } from "framer-motion";
-import { FaInfoCircle } from "react-icons/fa";
-import { FaPhoneVolume } from "react-icons/fa6";
 
 const ContentTopHome = () => {
-  const animetedText = useAnimatedText(
-    "Conhecimento e experiência que superarão suas expectativas"
-  );
-  return (
-    <div className="content-top-home">
-      <div className="content-bc">
-        <div className="overlay"></div>
-        <div className="shadow"></div>
-        <div className="index-subtitle-top miraculous-effect">
-          <p>Soluções</p>
-          <p>Jurídicas </p>
-          <p>Sob Medida</p>
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
-          <span className="subtitle2">{animetedText}</span>
-        </div>{" "}
-      </div>
-      <motion.div
-        initial={{ opacity: 0, x: "-100vw" }}
-        animate={{ opacity: 1, x: "calc(50% - 330px)" }}
-        transition={{ duration: 1 }}
-        className="card"
-      >
-        <p className="card-title">
-          <FaPhoneVolume size={24} style={{ marginRight: "0.5rem" }} />
-          Fale com nossa
-        </p>
-        <p className="card-title">equipe</p>
-        <p className="card-subtitle">Ficaremos felizes em ajudar</p>
-        <p className="card-subtitle2">você!!</p>
-        <a
-          href="https://api.whatsapp.com/send?phone=556733252215"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="index-button-about primary">
-            <FaInfoCircle />
-            <span>Entrar em contato</span>
-          </button>
-        </a>
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+  return (
+    <motion.section
+      className="hero"
+      initial="hidden"
+      animate="show"
+      variants={container}
+    >
+      <div className="overlay" />
+
+      <motion.div className="hero-content">
+        <motion.h1 variants={item}>Defesa jurídica estratégica</motion.h1>
+
+        <motion.p variants={item} className="subtitle">
+          Atendimento próximo, atuação precisa e foco em resultado.
+        </motion.p>
+
+        <motion.div variants={item} className="actions">
+          <a
+            href="https://api.whatsapp.com/send?phone=556733252215"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <motion.button
+              className="btn-primary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+            >
+              Falar com especialista
+            </motion.button>
+          </a>
+          <a href="#servicos">
+            <button className="btn-secondary">Ver serviços</button>
+          </a>
+        </motion.div>
       </motion.div>
-    </div>
+    </motion.section>
   );
 };
 

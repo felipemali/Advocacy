@@ -7,7 +7,9 @@ import { FaInfoCircle } from "react-icons/fa";
 const ServiceContent = () => {
   return (
     <div className="index-occupation-area">
-      <h3 className="index-occupation-area-title">Área de Atuação</h3>
+      <h3 className="index-occupation-area-title" id="servicos">
+        Área de Atuação
+      </h3>
       <h5 className="index-text-occupation-area">
         Prestamos assessoria de qualidade em vários ramos do direito, veja
       </h5>

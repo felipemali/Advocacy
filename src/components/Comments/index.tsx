@@ -28,7 +28,7 @@ const cardVariants = {
 };
 const Comments = () => {
   return (
-    <div className="comments">
+    <div className="comments" id="relatos">
       <h3 className="index-title-article">
         <GrArticle size={24} style={{ marginRight: "0.5rem" }} />
         Relatos
