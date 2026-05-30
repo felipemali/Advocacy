@@ -43,10 +43,10 @@ const DescriptionPerson = () => {
           <p className="index-text-about">
             O Advogado <strong>Reginaldo Lopes</strong> coloca as necessidades e
             interesses do cliente em primeiro lugar. Isso envolve ouvir
-            atentamente as preocupações do cliente, fornecer{" "}
-            <span>aconselhamento jurídico personalizado</span> e trabalhar
-            incansavelmente em parceria com outros profissionais do Direito para
-            alcançar os <span>melhores resultados possíveis</span>.
+            atentamente as preocupações do cliente, fornecer
+            <span> aconselhamento jurídico personalizado</span> e trabalhar
+            incansavelmente para alcançar os{" "}
+            <span>melhores resultados possíveis</span>.
           </p>
 
           <div className="index-icons-about">
