@@ -13,20 +13,7 @@ export const dataServices = [
     id: 0,
     link: "https://api.whatsapp.com/send?phone=556733252215",
   },
-  // {
-  //   name: "Empresarial",
-  //   img: business,
-  //   alt: "icon business",
-  //   id: 1,
-  //   link: "https://api.whatsapp.com/send?phone=556733252215",
-  // },
-  // {
-  //   name: "Público",
-  //   img: publics,
-  //   alt: "icon public",
-  //   id: 2,
-  //   link: "https://api.whatsapp.com/send?phone=556733252215",
-  // },
+
   {
     name: "Previdenciário",
     img: pension,
@@ -41,13 +28,7 @@ export const dataServices = [
     id: 4,
     link: "https://api.whatsapp.com/send?phone=556733252215",
   },
-  // {
-  //   name: "Administrativo",
-  //   img: administrative,
-  //   alt: "icon administrative",
-  //   id: 5,
-  //   link: "https://api.whatsapp.com/send?phone=556733252215",
-  // },
+
   {
     name: "Criminal",
     img: criminal,
