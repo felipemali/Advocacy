@@ -1,9 +1,6 @@
 import gear from "../assets/icons/icon-gear.ico";
-// import business from "../assets/icons/icon-business.ico";
 import pension from "../assets/icons/icon-pension.png";
-// import publics from "../assets/icons/icon-public.ico";
 import electoral from "../assets/icons/electoral.jpg";
-// import administrative from "../assets/icons/administrative.jpg";
 import criminal from "../assets/icons/criminal.jpg";
 import realEstate from "../assets/icons/real-estate.jpg";
 import civel from "../assets/icons/civel.png";
