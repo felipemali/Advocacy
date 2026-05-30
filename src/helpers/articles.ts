@@ -2,7 +2,6 @@ import IPTU from "../assets/img/articlesImg/article-iptu.png";
 import IPTULarge from "../assets/img/articlesImg/article-iptu-large.jpg";
 import heranca from "../assets/img/articlesImg/cobranca-herdeiro-aluguel.jpg";
 import woman from "../assets/img/articlesImg/womann.png";
-// import heranca2 from "../assets/img/articlesImg/desgin.png";
 
 export const articles = [
   {
@@ -107,6 +106,3 @@ export const articles = [
     id: 2,
   },
 ];
-
-// const sessionData = getSessionData("idProperties");
-//sessionStorage.setItem("articleId", JSON.stringify(articleID));
